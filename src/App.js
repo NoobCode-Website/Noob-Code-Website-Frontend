@@ -6,6 +6,7 @@ import ContactsPage from "./pages/ContactsPage";
 import Contests from "./components/events/subroutes/Contests";
 import Sessions from "./components/events/subroutes/Sessions";
 import Collaborations from "./components/events/subroutes/Collaborations";
+import ResourcesPage from "./pages/ResourcesPage";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route exact path="/events/sessions" element={<EventsPage />} />
           <Route exact path="/events/contests" element={<Contests />} />
           <Route exact path="/events/collaborations" element={<Collaborations />} />
+          <Route exact path="/resources" element={<ResourcesPage />} />
            
           
           <Route path="/contacts" element={<ContactsPage />} />
