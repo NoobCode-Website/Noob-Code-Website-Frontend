@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom'
 const Navbar = () => {
   const routings = [
     {name: 'Home', path: '/'},
-    {name: 'Events', path: '/events'},
+    {name: 'Events', path: '/events/sessions'},
     {name: 'Resources', path: '/resources'},
     {name: 'Team', path: '/team'},
-    {name: 'Contact', path: '/contact'},
+    {name: 'Contact', path: '/contacts'},
   ]
   return (
    <div className='flex flex-row items-center justify-around'>

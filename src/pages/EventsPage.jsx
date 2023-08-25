@@ -1,20 +1,20 @@
-import React from "react";
+import React  from "react";
 import EventCard from "../components/events/EventCard";
+import EventRoutes from "../components/events/EventRoutes";
+import Sessions from "../components/events/subroutes/Sessions";
 
 const EventsPage = () => {
+ 
   return (
+    
     <div className="flex flex-col items-center gap-12 py-8">
-      <div className="font-bold text-white text-3xl tracking-widest hover:scale-x-110 ">
-        <h1>Our Events</h1>
+      <div>
+        <EventRoutes  />
+      </div>
+      <div>
+        <Sessions />
       </div>
 
-      <div className="flex flex-col items-center gap-16">
-        <EventCard />
-        <EventCard />
-        <EventCard />
-        <EventCard />
-        <EventCard />
-      </div>
     </div>
   );
 };
