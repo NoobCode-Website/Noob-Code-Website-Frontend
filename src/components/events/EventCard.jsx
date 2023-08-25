@@ -1,18 +1,25 @@
 import React from "react";
 import logo from "../../assets/logo.jpg";
 import EventGallery from "./EventGallery";
+import SpeakerModal from "./SpeakerModal";
 const EventCard = () => {
   const [openGallery, setOpenGallery] = React.useState(false);
-
+  const [openSpeaker, setOpenSpeaker] = React.useState(false);
   const handleGallery = () => {
     setOpenGallery(true);
   };
   const closeModal = () => {
     setOpenGallery(false);
   };
+  const handleSpeaker = () => {
+    setOpenSpeaker(true);
+  }
+  const closeSpeaker = () => {
+    setOpenSpeaker(false);
+  }
   return (
     <div className="text-white">
-      <div className="border-2 border-blue-400  flex flex-row justify-between rounded-xl shadow-white shadow-md w-[1200px] p-10 hover:scale-x-105 duration-700">
+      <div className=" border-r-2 border-l-2 border-blue-400 shadow-blue-400  flex flex-row justify-between rounded-xl  shadow-md w-[1200px] p-10 hover:scale-x-105 duration-700">
         <div className=" flex flex-col w-[500px] gap-2">
           <div className="text-2xl font-bold tracking-wider">Session Name</div>
 
@@ -52,7 +59,7 @@ const EventCard = () => {
               </div>
             </div>
 
-            <button className="text-xl text-slate-400 hover:text-white duration-300">
+            <button onClick={handleSpeaker} className="text-xl text-slate-400 hover:text-white duration-300">
               Know About More{" "}
             </button>
           </div>
@@ -71,7 +78,9 @@ const EventCard = () => {
         </div>
       </div>
       {openGallery ? <EventGallery closeModal={closeModal} /> : null}
+      {openSpeaker ? <SpeakerModal closeSpeaker={closeSpeaker} /> : null}
     </div>
+    
   );
 };
 
