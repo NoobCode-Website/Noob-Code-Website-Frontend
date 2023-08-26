@@ -8,7 +8,7 @@ const ResourcesPage = () => {
         <h1>Our Resources</h1>
       </div>
 
-      <div className='flex flex-row items-center justify-center flex-wrap gap-16'>
+      <div className='flex flex-row items-center justify-center px-20  flex-wrap gap-16'>
         <ResourceCard />
         <ResourceCard />
         <ResourceCard />

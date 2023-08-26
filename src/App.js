@@ -7,6 +7,7 @@ import Contests from "./components/events/subroutes/Contests";
 import Sessions from "./components/events/subroutes/Sessions";
 import Collaborations from "./components/events/subroutes/Collaborations";
 import ResourcesPage from "./pages/ResourcesPage";
+import HomePage from "./pages/HomePage";
 
 function App() {
   return (
@@ -23,7 +24,7 @@ function App() {
           
           <Route path="/contacts" element={<ContactsPage />} />
          
-          <Route path="/" element={<h1>Home</h1>} />
+          <Route path="/" element={<HomePage />} />
         </Routes>
       </BrowserRouter>
     </>
