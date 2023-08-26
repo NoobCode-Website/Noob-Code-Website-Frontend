@@ -1,9 +1,18 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Socials = () => {
   return (
     <>
       <div className="text-white flex flex-col items-center gap-8">
+        <div>
+        <Link to="/joinus"><button
+              className="bg-violet-700 px-4 py-2 rounded-xl text-xl font-semibold hover:bg-violet-300 hover:text-violet-700"
+            >
+              Join Us as Ambassador
+            </button>
+            </Link>
+        </div>
         <div>
           <h1 className="text-3xl font-semibold tracking-widest hover:scale-x-110 hover:text-blue-400 cursor-pointer duration-500">
             How to Reach Us :{" "}

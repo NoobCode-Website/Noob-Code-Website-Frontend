@@ -8,6 +8,7 @@ import Sessions from "./components/events/subroutes/Sessions";
 import Collaborations from "./components/events/subroutes/Collaborations";
 import ResourcesPage from "./pages/ResourcesPage";
 import HomePage from "./pages/HomePage";
+import AmbassadorPage from "./pages/AmbassadorPage";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/contacts" element={<ContactsPage />} />
          
           <Route path="/" element={<HomePage />} />
+          <Route path="/joinus" element={<AmbassadorPage />} />
         </Routes>
       </BrowserRouter>
     </>
