@@ -1,55 +1,113 @@
-*{
-    margin: 1rem;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
-body{
-    /* background-color: rgb(3, 3, 46); */
-    background-color: #22A5A1;
-background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1200 800'%3E%3Cdefs%3E%3CradialGradient id='a' cx='0' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%233271a2'/%3E%3Cstop offset='1' stop-color='%233271a2' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='1200' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23116466'/%3E%3Cstop offset='1' stop-color='%23116466' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='c' cx='600' cy='0' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23213067'/%3E%3Cstop offset='1' stop-color='%23213067' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='d' cx='600' cy='800' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%2322A5A1'/%3E%3Cstop offset='1' stop-color='%2322A5A1' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='e' cx='0' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23413DA2'/%3E%3Cstop offset='1' stop-color='%23413DA2' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='f' cx='1200' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%2300222B'/%3E%3Cstop offset='1' stop-color='%2300222B' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1200' height='800'/%3E%3Crect fill='url(%23b)' width='1200' height='800'/%3E%3Crect fill='url(%23c)' width='1200' height='800'/%3E%3Crect fill='url(%23d)' width='1200' height='800'/%3E%3Crect fill='url(%23e)' width='1200' height='800'/%3E%3Crect fill='url(%23f)' width='1200' height='800'/%3E%3C/svg%3E");
-background-attachment: fixed;
-background-size: cover;
-    
+body {
+  background-color: #22a5a1;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1200 800'%3E%3Cdefs%3E%3CradialGradient id='a' cx='0' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%233271a2'/%3E%3Cstop offset='1' stop-color='%233271a2' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='1200' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23116466'/%3E%3Cstop offset='1' stop-color='%23116466' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='c' cx='600' cy='0' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23213067'/%3E%3Cstop offset='1' stop-color='%23213067' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='d' cx='600' cy='800' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%2322A5A1'/%3E%3Cstop offset='1' stop-color='%2322A5A1' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='e' cx='0' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23413DA2'/%3E%3Cstop offset='1' stop-color='%23413DA2' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='f' cx='1200' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%2300222B'/%3E%3Cstop offset='1' stop-color='%2300222B' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1200' height='800'/%3E%3Crect fill='url(%23b)' width='1200' height='800'/%3E%3Crect fill='url(%23c)' width='1200' height='800'/%3E%3Crect fill='url(%23d)' width='1200' height='800'/%3E%3Crect fill='url(%23e)' width='1200' height='800'/%3E%3Crect fill='url(%23f)' width='1200' height='800'/%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
 }
-h1, h2,h3{
-    font-family: "Josefin Sans";
-    color: antiquewhite;
-} 
-p{
-    color: antiquewhite;
-    font-family: "IBM Plex Mono";
-    font-weight: 300;
+.hero {
+  margin-top: 5rem;
+  display: flex;
+  height: 30rem;
+  align-items: center;
+  justify-content: center;
+  padding: 6rem;
+}
+.hero-text {
+  display: flex;
+  flex-direction: column;
+}
+.hero h1,
+h2,
+h3 {
+  font-family: "Raleway";
+  color: rgb(191, 218, 228);
+}
+.hero h1 {
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  margin-left: 20rem;
+  font-size: 2rem;
+}
+.hero h2 {
+  padding-left: 2rem;
+  margin-bottom: 3.5rem;
+  margin-left: 1rem;
+  font-size: 1.5rem;
+}
+.navbar {
+  height: 5rem;
+  width: 100%;
+  margin: 0;
+  background-color: #100e0e;
+  color: #dddddd;
+  align-items: center;
+  justify-content: end;
+  opacity: 0.6;
+}
+.navbar h1 {
+  margin-right: 5rem;
+}
 
+p {
+  color: antiquewhite;
+  font-family: "Raleway";
+  font-weight: bolder;
 }
-.vision-goals h2{
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    font-size: 3rem;
+.vision-goals {
+  margin: 10rem;
+}
+.vision-goals h2,
+.testimonials h2 {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
 }
 
-.vision-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
-    margin-top: 1.5rem;
-  }
-  
-  .vision-card {
-    background-color: #100e0e;
-    border: 1px solid #dddddd;
-    padding: 20px;
-    border-radius: 38px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .vision-card h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: antiquewhite;
-  }
-  
-  .vision-card p {
-    font-size: 16px;
-    color: #666666;
-  }
-  
+.vision-cards,
+.review-cards {
+  display: grid;
+  justify-content: space-evenly;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 1.7rem;
+}
+
+.vision-card {
+  background-color: #000000;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500'%3E%3Cdefs%3E%3Crect fill='none' stroke-width='169' stroke-opacity='0.48' id='a' x='-400' y='-300' width='800' height='600'/%3E%3C/defs%3E%3Cg transform='scale(0.532)' style='transform-origin:center'%3E%3Cg transform='rotate(180 0 0)' style='transform-origin:center'%3E%3Cg transform='rotate(-160 0 0)' style='transform-origin:center'%3E%3Cg transform='translate(1000 750)'%3E%3Cuse stroke='%23000' href='%23a' transform='rotate(10 0 0) scale(1.1)'/%3E%3Cuse stroke='%23010309' href='%23a' transform='rotate(20 0 0) scale(1.2)'/%3E%3Cuse stroke='%23010612' href='%23a' transform='rotate(30 0 0) scale(1.3)'/%3E%3Cuse stroke='%23020a1c' href='%23a' transform='rotate(40 0 0) scale(1.4)'/%3E%3Cuse stroke='%23030d25' href='%23a' transform='rotate(50 0 0) scale(1.5)'/%3E%3Cuse stroke='%2304102e' href='%23a' transform='rotate(60 0 0) scale(1.6)'/%3E%3Cuse stroke='%23041337' href='%23a' transform='rotate(70 0 0) scale(1.7)'/%3E%3Cuse stroke='%23051640' href='%23a' transform='rotate(80 0 0) scale(1.8)'/%3E%3Cuse stroke='%23061a4a' href='%23a' transform='rotate(90 0 0) scale(1.9)'/%3E%3Cuse stroke='%23071d53' href='%23a' transform='rotate(100 0 0) scale(2)'/%3E%3Cuse stroke='%2307205c' href='%23a' transform='rotate(110 0 0) scale(2.1)'/%3E%3Cuse stroke='%23082365' href='%23a' transform='rotate(120 0 0) scale(2.2)'/%3E%3Cuse stroke='%2309266e' href='%23a' transform='rotate(130 0 0) scale(2.3)'/%3E%3Cuse stroke='%230a2a78' href='%23a' transform='rotate(140 0 0) scale(2.4)'/%3E%3Cuse stroke='%230a2d81' href='%23a' transform='rotate(150 0 0) scale(2.5)'/%3E%3Cuse stroke='%230B308A' href='%23a' transform='rotate(160 0 0) scale(2.6)'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+  border: 1px solid #dddddd;
+  padding: 20px;
+  border-radius: 30px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  height: 15rem;
+}
+
+.vision-card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: antiquewhite;
+}
+
+.vision-card p {
+  font-size: 16px;
+  color: #666666;
+}
+.testimonials {
+  margin: 10rem;
+}
+.review-card {
+  background-color: #100e0e;
+  opacity: 0.8;
+  border: 1px solid #dddddd;
+  padding: 20px;
+  border-radius: 30px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  height: 15rem;
+}
