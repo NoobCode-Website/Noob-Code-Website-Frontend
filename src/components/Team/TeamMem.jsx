@@ -91,8 +91,8 @@ const TeamsPage = () => {
             alt={member.name}
             className="w-72 h-3/4 "
           />
-          <h3 className="text-xl font-semibold mt-2">{member.name}</h3>
-          <p className="text-gray-600">{member.role}</p>
+          <h3 className="text-xl text-black font-semibold mt-2">{member.name}</h3>
+          <p className="text-gray-800">{member.role}</p>
           {member.linkedin && member.linkedin.trim() !== '' && (
             <a
               href={member.linkedin}
