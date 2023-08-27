@@ -3,11 +3,16 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+import Team from './components/Team';
+import TeamsPage from './components/Team/TeamMem';
+import Header from './components/Navbar/Nav';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+  
+  <TeamsPage />
+   
+   
   </React.StrictMode>
 );
 
