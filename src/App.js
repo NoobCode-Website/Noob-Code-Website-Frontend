@@ -4,7 +4,7 @@ import Navbar from "./components/common/Navbar";
 import EventsPage from "./pages/EventsPage";
 import ContactsPage from "./pages/ContactsPage";
 import Contests from "./components/events/subroutes/Contests";
-import Sessions from "./components/events/subroutes/Sessions";
+
 import Collaborations from "./components/events/subroutes/Collaborations";
 import ResourcesPage from "./pages/ResourcesPage";
 import HomePage from "./pages/HomePage";

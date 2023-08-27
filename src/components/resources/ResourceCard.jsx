@@ -1,5 +1,5 @@
 import React from "react";
-import { Di } from "react-icons/di";
+
 const ResourceCard = () => {
   return (
     <div className="flex flex-col items-center w-[400px] hover:scale-105 duration-500 cursor-default border-2 border-blue-400  gap-5 rounded-xl shadow-md shadow-blue-200 p-6">

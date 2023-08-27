@@ -1,26 +1,25 @@
 import React from 'react'
 import logo from '../../assets/logo.jpg'
-const SpeakerBox = ({handleSpeaker}) => {
-   
+const SpeakerBox = ({speakers , index ,  handleSpeaker }) => {
+  
   return (
     <div>
-  <div className="flex flex-col items-center rounded-xl  gap-5 border-2 border-blue-300 justify-start  py-4">
+  <div className="flex flex-col items-center rounded-xl  gap-5 border-2 border-blue-300 justify-start px-4  py-4">
             <h1 className="text-xl font-semibold">Speaker </h1>
             <div className="flex flex-row justify-between gap-20">
-              <div>
+              <div className='flex flex-col items-center gap-5'>
                 <div>
                   <img src={logo} className="w-[150px] rounded-full" alt="" />
                 </div>
                 <div>
-                  <h1 className="font-semibold text-xl">Speaker Name</h1>
+                  <h1 className="font-semibold text-xl text-center">{speakers[index].speaker}</h1>
                 </div>
               </div>
 
               <div className="w-[200px]">
                 Qualifications :{" "}
                 <h1 className="font-semibold">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Quisquam, voluptatum.
+               {speakers[index].description}
                 </h1>
               </div>
             </div>

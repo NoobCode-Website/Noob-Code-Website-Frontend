@@ -1,5 +1,5 @@
 import React  from "react";
-import EventCard from "../components/events/EventCard";
+
 import EventRoutes from "../components/events/EventRoutes";
 import Sessions from "../components/events/subroutes/Sessions";
 
