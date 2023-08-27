@@ -85,6 +85,29 @@ Mail   |  Phone Number  |  LinkTree
 Discord  |  LinkedIn    |  Instagram 
 
 
+Admin Dashboard : (BACKEND) :
+1. Events : 
+   i. Add Event (POST Request)
+   ii. Edit Event (PUT Request)
+   iii. Delete Event (DELETE Request)
+   iv. View Events (GET Request)
+
+2. Resources :
+   i. Add Resource (POST Request)
+   ii. Edit Resource (PUT Request)
+   iii. Delete Resource (DELETE Request)
+   iv. View Resources (GET Request)
+
+3. Team :
+   i. Add Member (POST Request)
+   ii. Edit Member (PUT Request)
+   iii. Delete Member (DELETE Request)
+   iv. View Members (GET Request)
+
+4. Campus Ambassador :
+   i. View Campus Ambassadors (GET Request)
+
+
 Made with Love by Sagnik , Soumyaraj , Swapnendu , Esha .
 
 

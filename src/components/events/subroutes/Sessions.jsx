@@ -1,8 +1,29 @@
-import React from 'react'
-import EventCard from '../EventCard'
-import EventRoutes from '../EventRoutes'
+import React , {useEffect} from 'react'
+import axios from 'axios';
+import EventCard from '../EventCard';
 
 const Sessions = () => {
+  const [eventData , setEventData] = React.useState([]);
+  const [speakerData , setSpeakerData] = React.useState([]);
+  useEffect(() => {
+    axios.get('https://noob-code-website-backend.vercel.app/events/getevents')
+    .then((res) => {
+        setEventData(res.data.data);
+        console.log(res.data.data);
+    })
+    .catch((err) => {
+      console.log(err);
+    })
+
+    axios.get('https://noob-code-website-backend.vercel.app/events/getspeakers')
+    .then((res) => {
+        setSpeakerData(res.data.data);
+        console.log(res.data.data);
+    })
+    .catch((err) => {
+      console.log(err);
+    })
+} , []);
   return (
     <div>
         <div className="flex flex-col items-center gap-12 py-8">
@@ -11,7 +32,15 @@ const Sessions = () => {
       </div>
 
        <div>
-        <EventCard />
+       
+       {
+          eventData.map((event , index) => {
+            return (
+              <EventCard key={index}  name={event.activity} ylink={event.youtube} image={event.image} date={event.date} venue={event.venue} attendees={event.footfall}  />
+             
+            )
+          })
+       }
        </div>
 
     </div>

@@ -4,7 +4,9 @@ import EventRoutes from "../components/events/EventRoutes";
 import Sessions from "../components/events/subroutes/Sessions";
 
 const EventsPage = () => {
- 
+  
+
+
   return (
     
     <div className="flex flex-col items-center gap-12 py-8">

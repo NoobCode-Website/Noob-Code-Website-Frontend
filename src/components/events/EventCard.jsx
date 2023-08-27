@@ -1,68 +1,49 @@
-import React from "react";
+import React, { useEffect } from "react";
+import axios from "axios";
 import logo from "../../assets/logo.jpg";
 import EventGallery from "./EventGallery";
 import SpeakerModal from "./SpeakerModal";
-const EventCard = () => {
+import SpeakerBox from "./SpeakerBox";
+const EventCard = ({ name, date, venue, attendees , ylink , image  }) => {
   const [openGallery, setOpenGallery] = React.useState(false);
   const [openSpeaker, setOpenSpeaker] = React.useState(false);
+  const handleSpeaker = () => {
+      setOpenSpeaker(true);
+    };
+    const closeSpeaker = () => {
+      setOpenSpeaker(false);
+    };
   const handleGallery = () => {
     setOpenGallery(true);
   };
   const closeModal = () => {
     setOpenGallery(false);
   };
-  const handleSpeaker = () => {
-    setOpenSpeaker(true);
-  }
-  const closeSpeaker = () => {
-    setOpenSpeaker(false);
-  }
+ 
   return (
     <div className="text-white">
       <div className=" border-r-2 border-l-2 border-blue-400 shadow-blue-400  flex flex-row justify-between rounded-xl  shadow-md w-[1200px] p-10 hover:scale-x-105 duration-700">
         <div className=" flex flex-col w-[500px] gap-2">
-          <div className="text-2xl font-bold tracking-wider">Session Name</div>
+          <div className="text-2xl font-bold tracking-wider">{name}</div>
 
           <div className="flex flex-row justify-between">
-            <h1 className="text-lg font-semibold">Date </h1>
-            <h1 className="text-lg font-semibold">Venue Name</h1>
+            <h1 className="text-lg font-semibold">Date : {date}</h1>
+            <h1 className="text-lg font-semibold">Venue : {venue}</h1>
           </div>
 
-          <div className="text-lg font-semibold">Attendees : 100</div>
+          <div className="text-lg font-semibold">Attendees : {attendees}</div>
 
           <div className="flex flex-col font-bold text-lg">
             Youtube Link :{" "}
             <h1 className="underline font-semibold hover:text-blue-400 cursor-pointer duration-300">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Temporibus quibusdam amet aperiam!
+              {ylink}
             </h1>
           </div>
 
-          <div className="flex flex-col items-center rounded-xl  gap-5 border-2 border-blue-300 justify-start  py-4">
-            <h1 className="text-xl font-semibold">Speaker </h1>
-            <div className="flex flex-row justify-between gap-20">
-              <div>
-                <div>
-                  <img src={logo} className="w-[150px] rounded-full" alt="" />
-                </div>
-                <div>
-                  <h1 className="font-semibold text-xl">Speaker Name</h1>
-                </div>
-              </div>
-
-              <div className="w-[200px]">
-                Qualifications :{" "}
-                <h1 className="font-semibold">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Quisquam, voluptatum.
-                </h1>
-              </div>
-            </div>
-
-            <button onClick={handleSpeaker} className="text-xl text-slate-400 hover:text-white duration-300">
-              Know About More{" "}
-            </button>
-          </div>
+        <div>
+          {
+            <SpeakerBox handleSpeaker={handleSpeaker} />}
+        </div>
 
           <div className="flex flex-col items-center">
             <button
@@ -74,13 +55,12 @@ const EventCard = () => {
           </div>
         </div>
         <div>
-          <img src={logo} alt="" className="w-[500px] h-[500px]" />
+          <img src={image} alt="" className="w-[500px] h-[500px]" />
         </div>
       </div>
       {openGallery ? <EventGallery closeModal={closeModal} /> : null}
       {openSpeaker ? <SpeakerModal closeSpeaker={closeSpeaker} /> : null}
     </div>
-    
   );
 };
 
