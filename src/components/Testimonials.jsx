@@ -6,23 +6,33 @@ function Testimonials() {
         {
           name: "Foster Learning and Growth",
           review:
-            "From beginners taking their first steps, to seasoned experts pushing the boundaries of technology, we're here to inspire and support your progress.",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse alias totam.",
         },
         {
           name: "Ignite Innovation",
           review:
-            "We're not just following trends – we're setting them. Through regular brainstorming sessions, open forums, and daring experiments, we aim to push the boundaries of what technology can achieve.",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse alias totam.",
         },
         {
           name: "Cultivate Collaboration",
           review:
-            "Whether it's through shared projects, hackathons, or collaborative coding challenges, we're building a network that thrives on teamwork.",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse alias totam.",
         },
         {
+          name: "Give Back to Society",
           review:
-            "Through mentorship programs, workshops in underserved communities, and coding-for-good initiatives, we're using our skills to give back and empower those who need it most.",
-            name: "Give Back to Society"
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse alias totam.",
         },
+        {
+            name: "Give Back to Society",
+            review:
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse alias totam.",
+          },
+          {
+            name: "Give Back to Society",
+            review:
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse alias totam.",
+          },
       ];
       return(
         <section className="testimonials">
