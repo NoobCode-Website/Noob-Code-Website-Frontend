@@ -35,10 +35,10 @@ function Testimonials() {
           },
       ];
       return(
-        <section className="testimonials">
-        <h2>Hear from our members</h2>
+        <section className="testimonials mt-40">
+        <h2 className="text-3xl md:text-6xl text-center ">Hear from our members</h2>
         <br/>
-        <div className="review-cards">
+        <div className="review-cards border-white-500 grid justify-evenly grid-cols-2 md:grid-cols-3 gap-0.5 mb-3">
           {reviews.map((reviews, index) => (
             <ReviewCard
               key={index}

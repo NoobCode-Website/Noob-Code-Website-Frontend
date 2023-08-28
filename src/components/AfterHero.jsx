@@ -22,10 +22,10 @@ function AfterHero() {
   ];
 
   return (
-    <section className="vision-goals">
-      <h2>Our Vision and Goals</h2>
+    <section className="vision-goals mt-40">
+      <h2 className="vision-goals text-3xl md:text-6xl text-center">Our Vision and Goals</h2>
       <br/>
-      <div className="vision-cards">
+      <div className="vision-cards border-white-500 grid justify-evenly grid-cols-1 md:grid-cols-3 gap-5 m-5">
         {visions.map((vision, index) => (
           <VisionCard
             key={index}
