@@ -1,10 +1,11 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
 import EventCard from "../EventCard";
 
 const Sessions = () => {
   const [eventData, setEventData] = React.useState([]);
   const [speakerData, setSpeakerData] = React.useState([]);
+  const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
     axios
       .get("https://noob-code-website-backend.vercel.app/events/getevents")
@@ -19,6 +20,7 @@ const Sessions = () => {
       .get("https://noob-code-website-backend.vercel.app/events/getspeakers")
       .then((res) => {
         setSpeakerData(res.data.data);
+        setIsLoading(false);
         console.log(res.data.data) ;
       })
       .catch((err) => {
@@ -26,6 +28,9 @@ const Sessions = () => {
       });
   }, []);
 
+  if (isLoading) {
+    return <div>Loading...</div>;
+  }
   if (eventData.length === 0 || speakerData.length === 0) {
     console.log("Loading");
   }
