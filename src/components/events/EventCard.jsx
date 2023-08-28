@@ -23,18 +23,18 @@ const EventCard = ({ name, date, venue, attendees, ylink, image, speakers , inde
   
   return (
     <div className="text-white">
-      <div className=" border-r-2 border-l-2 border-blue-400 shadow-blue-400  flex flex-row justify-between rounded-xl  shadow-md w-[1200px] p-10 hover:scale-x-105 duration-700">
-        <div className=" flex flex-col w-[500px] gap-2">
-          <div className="text-2xl font-bold tracking-wider">{name}</div>
+      <div className=" border-r-2 border-l-2 border-blue-400 shadow-blue-400  flex lg:flex-row flex-col items-center justify-between rounded-xl  shadow-md md:w-[680px] 2xl:w-[1200px] p-10 hover:scale-x-105 duration-700 min-[360px]:w-[320px] min-[500px]:w-[470px] lg:w-[900px] xl:w-[1050px] gap-10">
+        <div className=" flex flex-col xl:w-[500px] gap-2 ">
+          <div className="text-2xl font-bold tracking-wider md:text-center lg:text-start">{name}</div>
 
-          <div className="flex flex-row justify-between">
-            <h1 className="text-lg font-semibold">Date : {date}</h1>
-            <h1 className="text-lg font-semibold">Venue : {venue}</h1>
+          <div className="flex lg:flex-row flex-col justify-between ">
+            <h1 className="text-2xl lg:text-lg font-semibold">Date : {date}</h1>
+            <h1 className="text-2xl lg:text-lg font-semibold">Venue : {venue}</h1>
           </div>
 
-          <div className="text-lg font-semibold">Attendees : {attendees}</div>
+          <div className="text-2xl lg:text-lg font-semibold">Attendees : {attendees}</div>
 
-          {ylink===" "?null:<div className="flex flex-col font-bold text-lg">
+          {ylink===" "?null:<div className="flex flex-col font-bold text-md">
             Youtube Link :{" "}
             <a href={ylink}  className="underline font-semibold hover:text-blue-400 cursor-pointer duration-300">
               {ylink}
@@ -55,7 +55,7 @@ const EventCard = ({ name, date, venue, attendees, ylink, image, speakers , inde
           </div>
         </div>
         <div>
-          <img src={image} alt="" className="w-[500px] h-[500px]" />
+          <img src={image} alt="" className="lg:w-[800px] lg:h-[500px] w-[320px] md:w-[600px] xl:w-[600px]" />
         </div>
       </div>
       {openGallery ? <EventGallery closeModal={closeModal} /> : null}

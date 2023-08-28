@@ -19,14 +19,14 @@ const Contests = () => {
     
 } , []);
   return (
-    <div>
+    <div className='overflow-x-hidden'>
         <div className="flex flex-col items-center gap-12 py-8">
       <div>
         <EventRoutes  />
       </div>
 
 
-      <div className="font-bold text-white text-3xl tracking-widest hover:scale-x-110 ">
+      <div className="font-bold text-white text-3xl tracking-widest hover:scale-x-110  md:text-4xl lg:text-3xl ">
         <h1>Our Contests</h1>
       </div>
 

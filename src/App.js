@@ -25,16 +25,16 @@ function App() {
       <div><Header isMenuOpen={isMenuOpen} toggleMenu={toggleMenu}/></div>
         <Routes>
           
-          <Route exact path="/events/sessions" element={<EventsPage />} />
-          <Route exact path="/events/contests" element={<Contests />} />
-          <Route exact path="/events/collaborations" element={<Collaborations />} />
-          <Route exact path="/resources" element={<ResourcesPage />} />
+          <Route exact path="/events/sessions" element={<EventsPage isMenuOpen={isMenuOpen} />} />
+          <Route exact path="/events/contests" element={<Contests isMenuOpen={isMenuOpen} />} />
+          <Route exact path="/events/collaborations" element={<Collaborations isMenuOpen={isMenuOpen} />} />
+          <Route exact path="/resources" element={<ResourcesPage isMenuOpen={isMenuOpen} />} />
            
           <Route path="/team" element={<TeamsPage isMenuOpen={isMenuOpen} />}/>
-          <Route path="/contacts" element={<ContactsPage />} />
+          <Route path="/contacts" element={<ContactsPage isMenuOpen={isMenuOpen} />} />
          
-          <Route path="/" element={<HomePage />} />
-          <Route path="/joinus" element={<AmbassadorPage />} />
+          <Route path="/" element={<HomePage isMenuOpen={isMenuOpen} />} />
+          <Route path="/joinus" element={<AmbassadorPage isMenuOpen={isMenuOpen} />} />
         </Routes>
         <Footer />
       </BrowserRouter>

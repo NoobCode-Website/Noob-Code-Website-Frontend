@@ -2,7 +2,7 @@ import React from "react";
 
 const ResourceCard = () => {
   return (
-    <div className="flex flex-col items-center w-[400px] hover:scale-105 duration-500 cursor-default border-2 border-blue-400  gap-5 rounded-xl shadow-md shadow-blue-200 p-6">
+    <div className="flex flex-col items-center min-[360px]:w-[300px] md:w-[680px] xl:w-[400px] hover:scale-105 duration-500 cursor-default border-2 border-blue-400  gap-5 rounded-xl shadow-md shadow-blue-200 p-6">
       <div>
         <img
           src="https://www.clipartmax.com/png/middle/351-3515666_c-language-global-or-external-variables-with-examples-c-programming-logo.png"
@@ -11,8 +11,8 @@ const ResourceCard = () => {
         />
       </div>
       <div className="flex flex-col items-center gap-5">
-        <h1 className="text-2xl text-white tracking-wider font-bold ">Tech Name</h1>
-        <p className="text-white text-lg">
+        <h1 className="text-2xl text-white  tracking-wider font-bold ">Tech Name</h1>
+        <p className="text-white text-lg text-center">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
           quaerat praesentium eos vel eius recusandae, esse accusantium a
           veritatis magni labore eveniet voluptatem itaque dolore odio dolores

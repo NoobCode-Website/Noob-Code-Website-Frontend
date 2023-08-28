@@ -18,7 +18,7 @@ const Socials = () => {
             How to Reach Us :{" "}
           </h1>
         </div>
-        <div className="flex flex-row items-center gap-10"> 
+        <div className="flex flex-col lg:flex-row items-center gap-10"> 
           <div>
           <a
             href="https://www.linkedin.com/in//"

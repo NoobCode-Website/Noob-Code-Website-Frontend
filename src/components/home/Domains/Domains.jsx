@@ -8,7 +8,7 @@ const Domains = () => {
      <h1>Our Domains</h1>
    </div>
 
-   <div className='flex flex-row items-center justify-center gap-20 px-20 flex-wrap'>
+   <div className='flex flex-row items-center justify-center gap-20 px-5 xl:px-20 flex-wrap'>
     <DomainCard />
     <DomainCard />
     <DomainCard />

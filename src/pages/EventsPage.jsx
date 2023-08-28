@@ -3,13 +3,13 @@ import React  from "react";
 import EventRoutes from "../components/events/EventRoutes";
 import Sessions from "../components/events/subroutes/Sessions";
 
-const EventsPage = () => {
+const EventsPage = ({isMenuOpen}) => {
   
 
 
   return (
     
-    <div className="flex flex-col items-center gap-12 py-8">
+    <div className={`flex flex-col items-center gap-12 py-8 ${isMenuOpen ? 'pt-96' : ''}`}>
       <div>
         <EventRoutes  />
       </div>

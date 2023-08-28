@@ -10,8 +10,8 @@ const SpeakerModal = ({ speakers, index, closeSpeaker }) => {
         id="container"
         className=" fixed inset-0 bg-black bg-opacity-40 backdrop-blur-sm flex justify-center items-center "
       >
-        <div className="flex w-[1000px] bg-cyan-900 flex-col border-2 rounded-xl">
-          <div className=" flex flex-row justify-between items-center   px-12 py-5  bg-violet-500 text-white">
+        <div className="flex w-[320px] h-[600px] overflow-y-scroll md:w-[700px] lg:w-[900px] lg:h-[500px] bg-cyan-900 flex-col border-2 rounded-xl">
+          <div className=" flex flex-row justify-between items-center  scroll-smooth   px-12 py-5  bg-violet-500 text-white">
             <div>
               <h1 className="font-bold text-2xl">Speaker Details</h1>
             </div>
@@ -23,11 +23,11 @@ const SpeakerModal = ({ speakers, index, closeSpeaker }) => {
             </div>
           </div>
 
-          <div className="flex flex-row justify-between px-10 py-5">
+          <div className="flex flex-col gap-5 lg:flex-row justify-between px-10 py-5">
             <div>
-              <div className="flex flex-col items-start">
+              <div className="flex flex-col items-start gap-2 lg:gap-0">
                 <div>
-                  <h1 className="text-4xl font-bold tracking-widest hover:scale-x-110 hover:scale-y-95 cursor-pointer duration-300">
+                  <h1 className="text-4xl lg:text-start text-center font-bold tracking-widest hover:scale-x-110 hover:scale-y-95 cursor-pointer duration-300">
                     {speaker.speaker}
                   </h1>
                 </div>
@@ -40,7 +40,7 @@ const SpeakerModal = ({ speakers, index, closeSpeaker }) => {
                       <li>{speakers[index].description}</li>
                     </ul>
 
-                    <div className="flex flex-row justify-between ">
+                    <div className="flex flex-row justify-around ">
                       <a href="/" rel="noreferrer" target="_blank" className="text-lg hover:text-black hover:scale-x-110 duration-500 cursor-pointer font-bold tracking-widest border-2 bg-blue-600 px-2 py-1 rounded-lg">
                         Session Link{" "}
                       </a>
@@ -61,14 +61,14 @@ const SpeakerModal = ({ speakers, index, closeSpeaker }) => {
               <img
                 src={speaker.image}
                 alt=""
-                className="w-[300px] rounded-xl border-t-2 border-t-cyan-200"
+                className="w-[300px] md:w-[400px] lg:w-[300px] rounded-xl border-t-2 border-t-cyan-200"
               />
-              <div className="flex flex-row gap-5 flex-wrap items-center">
+              <div className="flex flex-row gap-2 flex-wrap items-center">
                 <a
                   target="_blank"
                   rel="noreferrer"
                   href={speaker.twitter}
-                  className="px-4 py-2 rounded-full bg-[#3e94df] font-bold text-xl text-white hover:bg-white hover:text-[#3e94df] "
+                  className="px-3 py-2 rounded-full bg-[#3e94df] font-bold text-xl text-white hover:bg-white hover:text-[#3e94df] "
                 >
                   <BsTwitter className="h-[28px] w-[28px]" />
                 </a>

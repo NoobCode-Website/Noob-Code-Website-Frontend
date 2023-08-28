@@ -1,9 +1,9 @@
 import React from 'react'
 import Domains from '../components/home/Domains/Domains'
 
-const HomePage = () => {
+const HomePage = ({isMenuOpen}) => {
   return (
-    <div>
+    <div className={`${isMenuOpen ? 'pt-96' : ''}`}>
         <Domains />
     </div>
   )

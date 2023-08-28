@@ -25,7 +25,7 @@ const Collaborations = () => {
     <EventRoutes  />
   </div>
 
-  <div className="font-bold text-white text-3xl tracking-widest hover:scale-x-110 ">
+  <div className="font-bold text-white text-3xl tracking-widest hover:scale-x-110 md:text-4xl lg:text-3xl  ">
     <h1>Our Collaborations</h1>
   </div>
 
