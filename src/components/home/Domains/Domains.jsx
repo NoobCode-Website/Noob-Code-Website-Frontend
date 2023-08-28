@@ -13,7 +13,7 @@ const Domains = () => {
     <DomainCard />
     <DomainCard />
     <DomainCard />
-    <DomainCard />
+    
    </div>
    </div>
 

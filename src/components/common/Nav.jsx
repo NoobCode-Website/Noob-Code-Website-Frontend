@@ -1,6 +1,7 @@
 // Header.js
 import React from 'react';
 import {  Bars3BottomRightIcon, XMarkIcon } from '@heroicons/react/24/solid';
+import { Link } from 'react-router-dom';
 
 const Header = ({ isMenuOpen, toggleMenu }) => {
   let Links = [
@@ -41,9 +42,9 @@ const Header = ({ isMenuOpen, toggleMenu }) => {
               </a>
             </li>
           ))}
-          <button className='btn bg-blue-600 text-white md:ml-8  font-semibold px-3 py-2 rounded duration-500 md:static'>
+          <Link to="/joinus"><button className='btn bg-blue-600 text-white md:ml-8  font-semibold px-3 py-2 rounded duration-500 md:static'>
             Become Ambassador
-          </button>
+          </button></Link>
         </ul>
         
       </div>
