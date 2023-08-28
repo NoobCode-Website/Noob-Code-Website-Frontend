@@ -1,14 +1,14 @@
 // Header.js
-import React, { useState } from 'react';
-import { BookOpenIcon, Bars3BottomRightIcon, XMarkIcon } from '@heroicons/react/24/solid';
+import React from 'react';
+import {  Bars3BottomRightIcon, XMarkIcon } from '@heroicons/react/24/solid';
 
 const Header = ({ isMenuOpen, toggleMenu }) => {
   let Links = [
     { name: "HOME", link: "/" },
-    { name: "TEAM", link: "/" },
-    { name: "EVENTS", link: "/" },
-    { name: "RESOURCES", link: "/" },
-    { name: "CONTACT", link: "/" },
+    { name: "TEAM", link: "/team" },
+    { name: "EVENTS", link: "/events/sessions" },
+    { name: "RESOURCES", link: "/resources" },
+    { name: "CONTACT", link: "/contacts" },
     
   ];
 

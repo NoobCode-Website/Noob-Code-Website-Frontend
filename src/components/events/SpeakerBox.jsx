@@ -1,7 +1,7 @@
 import React from 'react'
-import logo from '../../assets/logo.jpg'
+
 const SpeakerBox = ({speakers , index ,  handleSpeaker }) => {
-  
+   const image = speakers.image;
   return (
     <div>
   <div className="flex flex-col items-center rounded-xl  gap-5 border-2 border-blue-300 justify-start px-4  py-4">
@@ -9,17 +9,17 @@ const SpeakerBox = ({speakers , index ,  handleSpeaker }) => {
             <div className="flex flex-row justify-between gap-20">
               <div className='flex flex-col items-center gap-5'>
                 <div>
-                  <img src={logo} className="w-[150px] rounded-full" alt="" />
+                  <img src={image} className="w-[150px] rounded-full" alt={speakers.speaker} />
                 </div>
                 <div>
-                  <h1 className="font-semibold text-xl text-center">{speakers[index].speaker}</h1>
+                  <h1 className="font-semibold text-xl text-center">{speakers.speaker}</h1>
                 </div>
               </div>
 
               <div className="w-[200px]">
                 Qualifications :{" "}
                 <h1 className="font-semibold">
-               {speakers[index].description}
+               {speakers.description}
                 </h1>
               </div>
             </div>

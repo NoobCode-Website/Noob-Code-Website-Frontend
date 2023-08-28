@@ -1,6 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 
 const AmbassadorForm = () => {
+
+    const [candidate , setCandidate] = useState({
+      name : "",
+      collegeName : "",
+      courseName : "",
+      presentYear : "",
+      email : "",
+      phoneNumber : "",
+      linkedInLink : "",
+      githubLink : "",
+      approach : ""
+    });
+
   return (
     <div className="text-white border-2 border-blue-400 p-10 rounded-xl">
       <form action="" >

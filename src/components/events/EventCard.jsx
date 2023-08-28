@@ -42,7 +42,7 @@ const EventCard = ({ name, date, venue, attendees, ylink, image, speakers , inde
           </div>}
 
           <div>
-          <SpeakerBox speakers={speakers} index={index} handleSpeaker={handleSpeaker} />
+          <SpeakerBox speakers={speakers[index]} index={index} handleSpeaker={handleSpeaker} />
           </div>
 
           <div className="flex flex-col items-center">

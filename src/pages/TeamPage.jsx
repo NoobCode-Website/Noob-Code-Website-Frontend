@@ -2,16 +2,10 @@
 
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import Header from '../components/common/Nav';
-import Footer from '../components/common/Footer';
-const TeamsPage = () => {
+
+const TeamsPage = ({isMenuOpen}) => {
   const [teamData, setTeamData] = useState([]);
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-
+ 
   useEffect(() => {
     axios
       .get("https://noob-code-website-backend.vercel.app/teams/getmembers") // Replace with your API endpoint
@@ -28,7 +22,7 @@ const TeamsPage = () => {
 
   return (
     <>
-    <div><Header isMenuOpen={isMenuOpen} toggleMenu={toggleMenu}/></div>
+   
 
 <div className={`bg-inherit z-0 text-white text-center py-10 ${isMenuOpen ? 'pt-96' : ''}`}>
   <h1 className="text-3xl font-semibold mb-10 ">NoobCode Core Team</h1>
@@ -43,7 +37,7 @@ const TeamsPage = () => {
             alt={member.name}
             className="w-72 h-3/4 "
           />
-          <h3 className="text-xl font-semibold mt-2">{member.name}</h3>
+          <h3 className="text-xl font-semibold mt-2 text-black">{member.name}</h3>
           <p className="text-gray-600">{member.role}</p>
           {member.linkedin && member.linkedin.trim() !== '' && (
             <a

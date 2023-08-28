@@ -18,7 +18,7 @@ const Footer = () => {
           <a
             data-aos="fade-up"
             data-aos-duration="1000"
-            href=""
+            href="https://discord.com/invite/PnTpVszb2V"
             className="box font-medium text-white flex items-center justify-center flex-col p-4 sm:p-2"
           >
             <FaDiscord className="text-black text-2xl sm:text-3xl hover:scale-125 cursor-pointer" />
@@ -27,7 +27,7 @@ const Footer = () => {
           <a
             data-aos="fade-up"
             data-aos-duration="1200"
-            href=""
+            href="https://chat.whatsapp.com/GYL89VSeSXgLppyy6U6NVZ"
             className="box font-medium text-white flex items-center justify-center flex-col p-4 sm:p-2"
           >
             <IoLogoWhatsapp className="text-black text-2xl sm:text-3xl hover:scale-125 cursor-pointer" />
@@ -36,7 +36,7 @@ const Footer = () => {
           <a
             data-aos="fade-up"
             data-aos-duration="1400"
-            href=""
+            href="https://www.instagram.com/_noobcode_/?igshid=MzRlODBiNWFlZA%3D%3D"
             className="box font-medium text-white flex items-center justify-center flex-col p-4 sm:p-2"
           >
             <RiInstagramFill className="text-black text-2xl sm:text-3xl hover:scale-125 cursor-pointer" />
@@ -45,7 +45,7 @@ const Footer = () => {
           <a
             data-aos="fade-up"
             data-aos-duration="1600"
-            href=""
+            href="https://linktr.ee/noobcode"
             className="box font-medium text-white flex items-center justify-center flex-col p-4 sm:p-2"
           >
             <SiLinktree className="text-black text-2xl sm:text-3xl hover:scale-125 cursor-pointer" />
