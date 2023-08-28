@@ -8,7 +8,9 @@ import Collaborations from "./components/events/subroutes/Collaborations";
 import ResourcesPage from "./pages/ResourcesPage";
 import HomePage from "./pages/HomePage";
 import AmbassadorPage from "./pages/AmbassadorPage";
-
+import Header from "./components/common/Nav";
+import Footer from "./components/common/Footer";
+import TeamsPage from "./pages/TeamPage";
 function App() {
   return (
     <>
@@ -21,12 +23,13 @@ function App() {
           <Route exact path="/events/collaborations" element={<Collaborations />} />
           <Route exact path="/resources" element={<ResourcesPage />} />
            
-          
+          <Route path="/team" element={<TeamsPage />}/>
           <Route path="/contacts" element={<ContactsPage />} />
          
           <Route path="/" element={<HomePage />} />
           <Route path="/joinus" element={<AmbassadorPage />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </>
   );
