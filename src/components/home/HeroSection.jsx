@@ -57,9 +57,8 @@ const HeroSection = () => {
 
       <div>
         {/* <img className="w-[300px] h-[300px] rounded-full" src={logo} alt="" /> */}
-        <motion.img src={logo} alt="noobcode logo" 
-      animate={{rotate:[ 0,300,300,0],x:[0,40,20,0,-80,-80,0]}}
-      transition={{repeat:Infinity,duration:3}}
+        <img src={logo} alt="noobcode logo" 
+      
        className='rounded-full border-2 mt-[150px] xl:mt-0 border-blue-500 h-[10rem] w-[10rem] md:w-[12rem] md:h-[12rem] xl:h-[15rem] xl:w-[15rem] ' style={logoStyle}  />
       </div>
     </div>
