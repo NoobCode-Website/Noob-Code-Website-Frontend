@@ -7,7 +7,7 @@ import axios from 'axios'
 const Contests = ({isMenuOpen}) => {
   const [contestData , setContestData] = useState([]);
   useEffect(() => {
-    axios.get('https://noob-code-website-backend.vercel.app/events/getcontests')
+    axios.get('https://noob-code-website-backend-xwzd.vercel.app/events/getcontests')
     .then((res) => {
         setContestData(res.data.data);  
     })

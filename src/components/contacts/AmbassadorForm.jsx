@@ -24,7 +24,7 @@ const AmbassadorForm = () => {
     event.preventDefault();
     try {
       await axios.post(
-        "https://noob-code-website-backend.vercel.app/ambassadors/addambassadors",
+        "https://www.noob-code-website-backend-xwzd.vercel.app/ambassadors/addambassadors",
         { ...candidate }
       );
       console.log("Form Data Submitted !");

@@ -7,7 +7,7 @@ const Collaborations = ({isMenuOpen}) => {
   const [collabData , setCollabData]= useState([]);
   useEffect(() => {
     axios
-      .get("https://noob-code-website-backend.vercel.app/events/getcollabs")
+      .get("https://noob-code-website-backend-xwzd.vercel.app/events/getcollabs")
       .then((res) => {
         setCollabData(res.data.data);
         console.log(res.data.data);
