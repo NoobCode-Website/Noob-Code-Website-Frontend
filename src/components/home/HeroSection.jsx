@@ -12,7 +12,7 @@ const HeroSection = () => {
         border: "1px solid blue"
       }
   return (
-    <div className="hero flex flex-col-reverse  2xl:flex-row  xl:justify-evenly items-center gap-20 mt-0 xl:mt-[100px]  xl:h-[550px] ">
+    <div className="hero flex flex-col-reverse flex-wrap  2xl:flex-row w-screen  xl:justify-evenly items-center gap-20 mt-0 xl:mt-[100px]  xl:h-[550px] ">
       <div className="flex  flex-col items-center gap-8 w-[280px] md:w-[500px] md:text-center  xl:w-[720px]">
         <TypeAnimation
           sequence={[
@@ -60,7 +60,7 @@ const HeroSection = () => {
         <motion.img src={logo} alt="noobcode logo" 
       animate={{rotate:[ 0,300,300,0],x:[0,40,20,0,-80,-80,0]}}
       transition={{repeat:Infinity,duration:3}}
-       className='rounded-full border-2 mt-[150px] xl:mt-0 border-blue-500 h-[10rem] w-[10rem] md:w-[12rem] md:h-[12rem] xl:h-[15rem] xl:w-[15rem] 'style={logoStyle}  />
+       className='rounded-full border-2 mt-[150px] xl:mt-0 border-blue-500 h-[10rem] w-[10rem] md:w-[12rem] md:h-[12rem] xl:h-[15rem] xl:w-[15rem] ' style={logoStyle}  />
       </div>
     </div>
   )
