@@ -3,7 +3,7 @@ import  {  useState } from "react";
 import EventGallery from "./EventGallery";
 import SpeakerModal from "./SpeakerModal";
 import SpeakerBox from "./SpeakerBox";
-const EventCard = ({ name, date, venue, attendees, ylink, image, speakers , index }) => {
+const EventCard = ({ name, date, venue, attendees, ylink, image, speakers , index , isLoading }) => {
   
   const [openGallery, setOpenGallery] = useState(false);
   const [openSpeaker, setOpenSpeaker] = useState(false);
@@ -22,7 +22,8 @@ const EventCard = ({ name, date, venue, attendees, ylink, image, speakers , inde
   };
   
   return (
-    <div className="text-white">
+    <>
+    {<div className="text-white">
       <div className=" border-r-2 border-l-2 border-blue-400 shadow-blue-400  flex lg:flex-row flex-col items-center justify-between rounded-xl  shadow-md md:w-[680px] 2xl:w-[1200px] p-10 hover:scale-x-105 duration-700 min-[360px]:w-[320px] min-[500px]:w-[470px] lg:w-[900px] xl:w-[1050px] gap-10">
         <div className=" flex flex-col xl:w-[500px] gap-2 ">
           <div className="text-2xl font-bold tracking-wider md:text-center lg:text-start">{name}</div>
@@ -60,7 +61,8 @@ const EventCard = ({ name, date, venue, attendees, ylink, image, speakers , inde
       </div>
       {openGallery ? <EventGallery closeModal={closeModal} /> : null}
       {openSpeaker ? <SpeakerModal speakers={speakers} index={index} closeSpeaker={closeSpeaker} /> : null}
-    </div>
+    </div>}
+    </>
   );
 };
 

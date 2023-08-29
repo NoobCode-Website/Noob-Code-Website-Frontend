@@ -31,3 +31,10 @@ body{
     background-attachment: fixed;
     background-size: cover;
   } 
+  @media screen and (min-height: 800px) {
+   .hero{
+        display: flex;
+        flex-direction: column-reverse;
+   }
+  }
+  

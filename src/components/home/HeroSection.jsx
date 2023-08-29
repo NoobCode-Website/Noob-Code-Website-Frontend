@@ -12,7 +12,7 @@ const HeroSection = () => {
         border: "1px solid blue"
       }
   return (
-    <div className="flex flex-col-reverse xl:flex-row  xl:justify-evenly items-center gap-20 mt-0 xl:mt-[100px]  xl:h-[550px] ">
+    <div className="hero flex flex-col-reverse  xl:flex-row  xl:justify-evenly items-center gap-20 mt-0 xl:mt-[100px]  xl:h-[550px] ">
       <div className="flex  flex-col items-center gap-8 w-[280px] md:w-[500px] md:text-center  xl:w-[720px]">
         <TypeAnimation
           sequence={[

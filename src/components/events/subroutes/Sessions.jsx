@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import EventCard from "../EventCard";
-
+import ReactLoading from 'react-loading';
 const Sessions = () => {
   const [eventData, setEventData] = React.useState([]);
   const [speakerData, setSpeakerData] = React.useState([]);
@@ -28,9 +28,9 @@ const Sessions = () => {
       });
   }, []);
 
-  if (isLoading) {
-    return <div>Loading...</div>;
-  }
+   if (isLoading) {
+     return 
+   }
   if (eventData.length === 0 || speakerData.length === 0) {
     console.log("Loading");
   }
@@ -43,6 +43,7 @@ const Sessions = () => {
         </div>
 
         <div className="flex flex-col items-center gap-20">
+  
           {eventData.map((event, index) => {
             return (
               <EventCard
@@ -55,6 +56,7 @@ const Sessions = () => {
                 date={event.date}
                 venue={event.venue}
                 attendees={event.footfall}
+                isLoading={isLoading}
               />
             );
           })}
