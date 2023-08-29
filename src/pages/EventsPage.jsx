@@ -9,7 +9,7 @@ const EventsPage = ({isMenuOpen}) => {
 
   return (
     
-    <div className={`flex flex-col items-center gap-12 py-8 ${isMenuOpen ? 'pt-96' : ''}`}>
+    <div className={`flex flex-col items-center gap-12 py-8  ${isMenuOpen ? 'pt-96' : 'pt-[150px]'}`}>
       <div>
         <EventRoutes  />
       </div>

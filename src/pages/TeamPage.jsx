@@ -24,7 +24,7 @@ const TeamsPage = ({isMenuOpen}) => {
     <>
    
 
-<div className={`bg-inherit z-0 text-white text-center py-10 ${isMenuOpen ? 'pt-96' : ''}`}>
+<div className={`bg-inherit z-0 text-white  text-center py-10 ${isMenuOpen ? 'pt-96' : 'pt-[150px]'}`}>
   <h1 className="text-3xl font-semibold mb-10 ">NoobCode Core Team</h1>
   <div className="flex flex-wrap justify-center">
     {coreMembers.map((member, index) => (
