@@ -4,13 +4,12 @@ import EventRoutes from '../EventRoutes'
 import ContestCard from '../contests/ContestCard'
 import axios from 'axios'
 
-const Contests = () => {
+const Contests = ({isMenuOpen}) => {
   const [contestData , setContestData] = useState([]);
   useEffect(() => {
     axios.get('https://noob-code-website-backend.vercel.app/events/getcontests')
     .then((res) => {
-        setContestData(res.data.data);
-        
+        setContestData(res.data.data);  
     })
     .catch((err) => {
       console.log(err);
@@ -19,7 +18,7 @@ const Contests = () => {
     
 } , []);
   return (
-    <div className='overflow-x-hidden'>
+    <div className={`flex overflow-x-hidden flex-col items-center gap-12 py-8  ${isMenuOpen ? 'pt-96' : 'pt-[150px]'}`}>
         <div className="flex flex-col items-center gap-12 py-8">
       <div>
         <EventRoutes  />

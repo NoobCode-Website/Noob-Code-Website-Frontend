@@ -3,7 +3,7 @@ import EventRoutes from '../EventRoutes'
 import CollaborationCard from '../collaborations/CollaborationCard'
 import axios from 'axios';
 
-const Collaborations = () => {
+const Collaborations = ({isMenuOpen}) => {
   const [collabData , setCollabData]= useState([]);
   useEffect(() => {
     axios
@@ -19,7 +19,7 @@ const Collaborations = () => {
    
   }, []);
   return (
-    <div>
+    <div className={`flex flex-col oveflow-x-hidden items-center gap-12 py-8  ${isMenuOpen ? 'pt-96' : 'pt-[150px]'}`}>
     <div className="flex flex-col items-center gap-12 py-8">
   <div>
     <EventRoutes  />

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import EventCard from "../EventCard";
-import ReactLoading from 'react-loading';
+
 const Sessions = () => {
   const [eventData, setEventData] = React.useState([]);
   const [speakerData, setSpeakerData] = React.useState([]);
