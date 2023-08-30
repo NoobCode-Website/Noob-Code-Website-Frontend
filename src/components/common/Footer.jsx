@@ -31,10 +31,7 @@ const Footer = () => {
 <div className="flex flex-col items-center gap-5">
   <img src={logo} className="w-[120px] h-[120px] rounded-full" alt="" />
   <div className="flex flex-col items-center gap-2">
-    <div className="flex flex-row items-center gap-5 justify-center">
-    <IoCall className="w-[40px] h-[40px] border-2 border-green-400 rounded-full p-1 bg-green-400" />
-    <h1 className="text-xl font-semibold "> : +91 8337045160 </h1>
-    </div>
+  
          
           <a className="bg-blue-400 text-white px-3 py-2 rounded-full hover:text-blue-600 hover:bg-white font-semibold text-lg " href="mailto:noobcode2023@gmail.com"> Send email</a>
          
