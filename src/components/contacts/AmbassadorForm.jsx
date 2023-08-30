@@ -17,20 +17,20 @@ const AmbassadorForm = () => {
 
   const handleChange = (event) => {
     const { name, value } = event.target;
-    setCandidate({ ...candidate, [name]: value });
+    setCandidate({ ...candidate, [name] : value });
   };
 
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
       await axios.post(
-        "https://www.noob-code-website-backend-xwzd.vercel.app/ambassadors/addambassadors",
+        "https://noob-code-website-backend-xwzd.vercel.app/ambassadors/addambassadors",
         { ...candidate }
       );
       console.log("Form Data Submitted !");
 
       console.log(candidate);
-    } catch (err) {
+    } catch(err) {
       console.log(err);
     }
   };

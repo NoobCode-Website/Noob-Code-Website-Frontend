@@ -20,7 +20,7 @@ export const Links = [
 
         <div className='font-bold text-2xl cursor-pointer flex items-center gap-2  '>
           
-          <img src='https://i.postimg.cc/VL6FtfjK/20230215-095834-0000.png' className='w-14 h-14  text-blue-600 rounded-full' alt='NC Logo'/>
+          <Link to="/"><img src='https://i.postimg.cc/VL6FtfjK/20230215-095834-0000.png' className='w-14 h-14  text-blue-600 rounded-full' alt='NC Logo'/></Link>
           <div className='flex flex-col pr-4 xl:flex-row'>
             <span>Noob</span>
             <span>Code</span>
