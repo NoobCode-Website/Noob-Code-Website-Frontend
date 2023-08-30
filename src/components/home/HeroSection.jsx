@@ -1,5 +1,5 @@
 import React from 'react'
-import { BsDiscord, BsGithub, BsLinkedin } from 'react-icons/bs'
+import { BsDiscord, BsGithub, BsLinkedin , BsInstagram } from 'react-icons/bs'
 import { TypeAnimation } from "react-type-animation";
 import logo from '../../assets/logo.jpg'
 import {motion} from 'framer-motion'
@@ -33,24 +33,21 @@ const HeroSection = () => {
         </h1> */}
 
         <p className="text-white md:text-center font-semibold text-xl w-[280px] xl:w-[500px]">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate
-          fugit esse debitis laudantium hic unde sequi provident, facere rem
-          excepturi autem asperiores beatae repellendus. Amet eos officia modi
-          quas esse. Iusto, ab eligendi nostrum veniam quidem corporis quibusdam
-          perspiciatis velit.
+        NOOBCODE aims at providing hand-picked Free Resources to everyone in domains of Programming Languages, DSA and Web Development , hosting Competitions to Ignite the Spirit of Coding and Development and Building a Community of Like-minded individuals and thus grow together. I believe the more we share our knowledge and interact the more we become knowledgeable . 
+Exploring New Domains and Organizing Sessions on various technologies to help people interact with big tech  people .
           <div className="flex flex-col gap-10  xl:flex-row  justify-center  mt-10  items-center">
-            <button className="px-4 py-4 rounded-full bg-[#1a8fdd] font-bold text-xl text-white hover:bg-white hover:text-[#1a8fdd]">
+            <a href='https://chat.whatsapp.com/GYL89VSeSXgLppyy6U6NVZ' rel='noreferrer' target='_blank' className="px-4 py-4 rounded-full bg-[#1a8fdd] font-bold text-xl text-white hover:bg-white hover:text-[#1a8fdd]">
               Join Us
-            </button>
-            <button className="px-4 py-2 rounded-full bg-[#6a45e4] font-bold text-xl text-white hover:bg-white hover:text-[#6a45e4] ">
+            </a>
+            <a href='https://discord.gg/MGT7jvFk' rel='noreferrer' target='_blank' className="px-4 py-2 rounded-full bg-[#6a45e4] font-bold text-xl text-white hover:bg-white hover:text-[#6a45e4] ">
               <BsDiscord className="h-[40px] w-[40px]" />
-            </button>
-            <button className="px-4 py-2 rounded-full bg-[#0c0b0f] font-bold text-xl text-white hover:bg-white hover:text-[#0c0b0f]">
-              <BsGithub className="h-[40px] w-[40px]" />
-            </button>
-            <button className="px-4 py-2 rounded-full bg-[#215594] font-bold text-xl text-white hover:bg-white hover:text-[#215594]">
+            </a>
+            <a href='https://www.instagram.com/_noobcode_/' rel='noreferrer' target='_blank' className="px-4 py-2 rounded-full bg-white font-bold text-xl text-[#ab3ad7] hover:bg-[#ab3ad7] hover:text-white">
+              <BsInstagram className="h-[40px] w-[40px]" />
+            </a>
+            <a href='https://www.linkedin.com/company/90744227/' rel='noreferrer' target='_blank' className="px-4 py-2 rounded-full bg-[#215594] font-bold text-xl text-white hover:bg-white hover:text-[#215594]">
               <BsLinkedin className="h-[40px] w-[40px]" />
-            </button>
+            </a>
           </div>
         </p>
       </div>

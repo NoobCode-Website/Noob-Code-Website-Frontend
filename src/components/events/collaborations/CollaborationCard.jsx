@@ -26,9 +26,9 @@ const CollaborationCard = ({index , date , description , image , name , website 
             <a href={website} className="bg-violet-700 text-center px-4 py-2 rounded-xl text-xl font-semibold hover:bg-violet-300 hover:text-violet-700">
                Partner Website
             </a>
-            <button className="bg-violet-700 px-4 py-2 rounded-xl text-xl font-semibold hover:bg-violet-300 hover:text-violet-700">
+            {/* <button className="bg-violet-700 px-4 py-2 rounded-xl text-xl font-semibold hover:bg-violet-300 hover:text-violet-700">
               Gallery
-            </button>
+            </button> */}
           </div>
         </div>
         <div>

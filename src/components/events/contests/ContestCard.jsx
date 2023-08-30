@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 import LeaderBoard from './LeaderBoard'
 const ContestCard = ({key , index , name , date , description , attendees , link , image , time , venue}) => {
-    const [openLeaderboard, setOpenLeaderboard] = useState(false)
+    // const [openLeaderboard, setOpenLeaderboard] = useState(false)
   return (
     <div className="text-white">
       <div className=" border-r-2 border-l-2 border-blue-400 shadow-blue-400  flex lg:flex-row flex-col justify-between rounded-xl  shadow-md  p-10 hover:scale-x-105 duration-700 md:w-[680px] 2xl:w-[1200px] min-[360px]:w-[320px] min-[500px]:w-[470px] lg:w-[900px] xl:w-[1050px] gap-10">
@@ -36,12 +36,12 @@ const ContestCard = ({key , index , name , date , description , attendees , link
             >
               View Contest
             </a>
-            <button
+            {/* <button
             onClick={() => setOpenLeaderboard(true)}
               className="bg-violet-700 px-4 py-2 rounded-xl  text-xl md:text-xl font-semibold hover:bg-violet-300 hover:text-violet-700"
             >
               View Leaderboard
-            </button>
+            </button> */}
             </div>
           
 
@@ -50,7 +50,7 @@ const ContestCard = ({key , index , name , date , description , attendees , link
           <img src={image} alt="" className="lg:w-[800px] lg:h-[500px] w-[320px] md:w-[600px] xl:w-[600px]" />
         </div>
       </div>
-      {openLeaderboard ? <LeaderBoard setOpenLeaderboard={setOpenLeaderboard} /> : null}
+      {/* {openLeaderboard ? <LeaderBoard setOpenLeaderboard={setOpenLeaderboard} /> : null} */}
     </div>
   )
 }

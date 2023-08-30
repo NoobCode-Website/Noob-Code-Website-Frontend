@@ -3,15 +3,16 @@ import React from 'react';
 import {  Bars3BottomRightIcon, XMarkIcon } from '@heroicons/react/24/solid';
 import { Link } from 'react-router-dom';
 
-const Header = ({ isMenuOpen, toggleMenu }) => {
-  let Links = [
-    { name: "HOME", link: "/" },
-    { name: "TEAM", link: "/team" },
-    { name: "EVENTS", link: "/events/sessions" },
-    { name: "RESOURCES", link: "/resources" },
-    { name: "CONTACT", link: "/contacts" },
-    
-  ];
+export const Links = [
+  { name: "HOME", link: "/" },
+  { name: "TEAM", link: "/team" },
+  { name: "EVENTS", link: "/events/sessions" },
+  { name: "RESOURCES", link: "/resources" },
+  { name: "CONTACT", link: "/contacts" },
+  
+];
+ const Header = ({ isMenuOpen, toggleMenu }) => {
+ 
 
   return (
     <div className={`shadow-md w-full top-0 left-0 fixed z-20 ${isMenuOpen ? 'relative' : ''}`}>
