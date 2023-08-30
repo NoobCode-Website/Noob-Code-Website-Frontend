@@ -37,11 +37,11 @@ export const Links = [
           }`}
         >
           {Links.map((link) => (
-            <li className='md:ml-8 md:my-0 my-7 font-semibold xl:text-xl' key={link.name}>
-              <a href={link.link} className='text-black hover:text-blue-600 duration-500'>
+            <Link to={link.link}><li className='md:ml-8 md:my-0 my-7 font-semibold xl:text-xl' key={link.name}>
+              <h1 className='text-black hover:text-blue-600 duration-500'>
                 {link.name}
-              </a>
-            </li>
+              </h1>
+            </li></Link>
           ))}
           <Link to="/joinus"><button className='btn bg-blue-600 text-white md:ml-8  font-semibold px-3 py-2 rounded duration-500 md:static'>
             Become Ambassador
