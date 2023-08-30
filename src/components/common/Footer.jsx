@@ -116,9 +116,7 @@ const Footer = () => {
       </div>
     </div>
     
-    <div className="text-center font-semibold   text-md sm:text-sm">
-          |Copyright &copy;<span className="text-gray-700">2023 NoobCode</span> All rights reserved |
-        </div>
+   
     
     </>
   );
