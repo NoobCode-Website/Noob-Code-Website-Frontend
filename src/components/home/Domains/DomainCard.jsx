@@ -11,7 +11,7 @@ const DomainCard = ({key , name , count , photo , description , link}) => {
         <img
           src={photo}
           alt=""
-          className="h-[150px] w-[150px] rounded-lg"
+          className="h-[150px] object-cover w-[150px] rounded-lg"
         />
         <div className="flex flex-col items-center gap-2">
           <h1 className="text-2xl text-center text-white tracking-wider font-semibold">
