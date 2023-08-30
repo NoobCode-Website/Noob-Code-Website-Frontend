@@ -24,8 +24,10 @@ const TeamsPage = ({isMenuOpen}) => {
     <>
    
 
-<div className={`bg-inherit z-0 text-white  text-center py-10 ${isMenuOpen ? 'pt-96' : 'pt-[150px]'}`}>
-  <h1 className="text-3xl font-semibold mb-10 ">NoobCode Core Team</h1>
+<div className={`bg-inherit z-0 text-white  text-center py-10 ${isMenuOpen ? 'pt-96' : '2xl:pt-[150px]'}`}>
+<div className="font-bold text-white text-3xl tracking-widest hover:scale-x-110 mb-10 duration-500 cursor-pointer">
+        <h1>NoobCode Core Team</h1>
+      </div>
   <div className="flex flex-wrap justify-center">
     {coreMembers.map((member, index) => (
       <div key={index} className="flex  max-w-xs justify-center my-2 mx-3.5">
@@ -73,7 +75,9 @@ const TeamsPage = ({isMenuOpen}) => {
       </div>
     ))}
   </div>
-  <h1 className="text-3xl text-white font-semibold mb-10">NoobCode Pillars</h1>
+  <div className="font-bold text-white text-3xl tracking-widest hover:scale-x-110 my-10 duration-500 cursor-pointer">
+        <h1>NoobCode Pillars</h1>
+      </div>
   <div className="flex flex-wrap justify-center">
     {ncoreMembers.map((member, index) => (
       <div key={index} className="flex max-w-xs justify-center my-2 mx-3.5">

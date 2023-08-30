@@ -6,7 +6,7 @@ const ContactsPage = ({isMenuOpen}) => {
    
       
   return (
-    <div className={`flex flex-col items-center gap-10  ${isMenuOpen ? 'pt-96' : 'pt-[150px]'}`}>
+    <div className={`flex flex-col items-center gap-10  ${isMenuOpen ? 'pt-96' : '2xl:pt-[150px]'}`}>
        <Location />
        <Socials />
     </div>

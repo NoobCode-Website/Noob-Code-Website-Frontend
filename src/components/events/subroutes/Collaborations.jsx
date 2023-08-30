@@ -19,7 +19,7 @@ const Collaborations = ({isMenuOpen}) => {
    
   }, []);
   return (
-    <div className={`flex flex-col oveflow-x-hidden items-center gap-12 py-8  ${isMenuOpen ? 'pt-96' : 'pt-[150px]'}`}>
+    <div className={`flex flex-col oveflow-x-hidden items-center gap-12 py-8  ${isMenuOpen ? 'pt-96' : 'pt-[120px]'}`}>
     <div className="flex flex-col items-center gap-12 py-8">
   <div>
     <EventRoutes  />

@@ -18,7 +18,7 @@ const Contests = ({isMenuOpen}) => {
     
 } , []);
   return (
-    <div className={`flex overflow-x-hidden flex-col items-center gap-12 py-8  ${isMenuOpen ? 'pt-96' : 'pt-[150px]'}`}>
+    <div className={`flex overflow-x-hidden flex-col items-center gap-12 py-8  ${isMenuOpen ? 'pt-96' : '2xl:pt-[120px]'}`}>
         <div className="flex flex-col items-center gap-12 py-8">
       <div>
         <EventRoutes  />

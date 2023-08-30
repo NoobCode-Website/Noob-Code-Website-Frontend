@@ -41,19 +41,19 @@ const Footer = () => {
          
         </div>
 </div>
-      <div className=" h-auto sm:h-[250px] flex flex-col gap-8 items-center  p-6 sm:p-4">
+      <div className=" h-auto sm:h-[250px] flex flex-col justify-around gap-5 items-center  p-6 sm:p-4">
         <h2
           data-aos="zoom-out"
           className="font-bold text-3xl sm:text-2xl md:text-4xl lg:text-5xl"
         >
           Let's Connect 
         </h2>
-        <div className="flex flex-wrap justify-center gap-4 sm:gap-8">
+        <div className="flex flex-wrap justify-center flex-row gap-4 2xl:gap-4 sm:gap-8">
           <a
             data-aos="fade-up"
             data-aos-duration="1000"
             href="https://discord.com/invite/PnTpVszb2V"
-            className="box font-medium text-white flex items-center justify-center flex-col p-4 sm:p-2"
+            className="box font-medium text-white flex items-center justify-center flex-col py-4 sm:p-2"
           >
             <FaDiscord className="text-white h-[40px] w-[40px] rounded-full px-1 py-1 text-2xl sm:text-3xl hover:scale-125 cursor-pointer bg-violet-500 " />
             <p className="text-xs sm:text-lg text-violet-400">Discord</p>
@@ -62,7 +62,7 @@ const Footer = () => {
             data-aos="fade-up"
             data-aos-duration="1200"
             href="https://chat.whatsapp.com/GYL89VSeSXgLppyy6U6NVZ"
-            className="box font-medium text-white  flex items-center justify-center flex-col p-4 sm:p-2"
+            className="box font-medium text-white  flex items-center justify-center flex-col py-4 sm:p-2"
           >
             <IoLogoWhatsapp className=" text-2xl sm:text-3xl hover:scale-125 cursor-pointer h-[40px] w-[40px] rounded-full px-1 py-1 bg-white text-green-400 border-2 border-green-400" />
             <p className="text-xs sm:text-lg text-green-400">WhatsApp</p>
@@ -71,7 +71,7 @@ const Footer = () => {
             data-aos="fade-up"
             data-aos-duration="1400"
             href="https://www.instagram.com/_noobcode_/?igshid=MzRlODBiNWFlZA%3D%3D"
-            className="box font-medium text-white flex items-center justify-center flex-col p-4 sm:p-2"
+            className="box font-medium text-white flex items-center justify-center flex-col py-4 sm:p-2"
           >
             <RiInstagramFill className=" text-2xl sm:text-3xl hover:scale-125 cursor-pointer h-[40px] w-[40px] rounded-full px-1 py-1 bg-white text-pink-600 border-2 border-pink-400" />
             <p className="text-xs sm:text-lg text-pink-600">Instagram</p>
@@ -80,7 +80,7 @@ const Footer = () => {
             data-aos="fade-up"
             data-aos-duration="1600"
             href="https://linktr.ee/noobcode"
-            className="box font-medium text-white flex items-center justify-center flex-col p-4 sm:p-2"
+            className="box font-medium text-white flex items-center justify-center flex-col py-4 sm:p-2"
           >
             <SiLinktree className="  text-2xl sm:text-3xl hover:scale-125 cursor-pointer h-[40px] w-[40px] rounded-full px-1 py-1 bg-green-600 text-black border-2 border-black" />
             <p className="text-xs sm:text-lg text-green-600">Linktree</p>

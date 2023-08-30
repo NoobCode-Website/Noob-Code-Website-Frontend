@@ -15,7 +15,7 @@ export const Links = [
  
 
   return (
-    <div className={`shadow-md w-full top-0 left-0 fixed z-20 ${isMenuOpen ? 'relative' : ''}`}>
+    <div className={`shadow-md w-full 2xl:fixed top-0 left-0  z-20 ${isMenuOpen ? 'relative' : ''}`}>
       <div className='md:flex items-center justify-around bg-yellow-400 py-4 md:px-10 px-7'>
 
         <div className='font-bold text-2xl cursor-pointer flex items-center gap-2  '>

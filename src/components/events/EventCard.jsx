@@ -56,7 +56,7 @@ const EventCard = ({ name, date, venue, attendees, ylink, image, speakers , inde
           </div>
         </div>
         <div>
-          <img src={image} alt="" className="lg:w-[800px] lg:h-[500px] w-[320px] md:w-[600px] xl:w-[600px]" />
+          <img src={image} alt="" className="lg:w-[800px] lg:h-[500px] w-[320px] md:w-[600px] xl:w-[500px]" />
         </div>
       </div>
       {openGallery ? <EventGallery closeModal={closeModal} /> : null}
