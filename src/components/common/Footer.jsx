@@ -4,24 +4,10 @@ import { FaDiscord } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { RiInstagramFill } from "react-icons/ri";
 import { SiLinktree } from "react-icons/si";
-import {IoCall} from 'react-icons/io5'
 import { Links } from "./Nav";
 import { Link } from "react-router-dom";
 
-const developers = [
-  {
-    id : 1 , name : "Soumyaraj" , link : "" 
-  },
-  {
-    id : 2 , name : "Sagnik" , link : "" 
-  },
-  {
-    id : 3 , name : "Swapnendu" , link : "" 
-  },
-  {
-    id : 4 , name : "Esha" , link : "" 
-  },
-]
+
 
 const Footer = () => {
   return (
@@ -84,17 +70,7 @@ const Footer = () => {
           </a>
         </div>
 
-        <div className="text-lg font-bold flex flex-col items-center ">
-           Made with ❤️ by
-           <ul className="flex flex-col items-center xl:flex-row gap-2 2xl:gap-5">
-            {
-              developers.map((dev , index)=>(
-                <Link to={dev.link}><li key={index} className="text-xl font-semibold text-blue-600 hover:text-blue-400 cursor-pointer">{dev.name}</li></Link>
-              ))
-            }
-           </ul>
-            
-        </div>
+        
       
         
       </div>
