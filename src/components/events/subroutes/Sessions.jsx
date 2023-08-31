@@ -8,7 +8,7 @@ const Sessions = () => {
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
     axios
-      .get("https://noob-code-website-backend-xwzd.vercel.app/events/getevents")
+      .get("https://noobcode-server-side.vercel.app/events/getevents")
       .then((res) => {
         setEventData(res.data.data);
       })
@@ -17,7 +17,7 @@ const Sessions = () => {
       });
 
     axios
-      .get("https://noob-code-website-backend-xwzd.vercel.app/events/getspeakers")
+      .get("https://noobcode-server-side.vercel.app/events/getspeakers")
       .then((res) => {
         setSpeakerData(res.data.data);
         setIsLoading(false);

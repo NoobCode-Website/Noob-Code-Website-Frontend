@@ -8,7 +8,7 @@ const TeamsPage = ({isMenuOpen}) => {
  
   useEffect(() => {
     axios
-      .get("https://noob-code-website-backend-xwzd.vercel.app/teams/getmembers") // Replace with your API endpoint
+      .get("https://noobcode-server-side.vercel.app/teams/getmembers") // Replace with your API endpoint
       .then((response) => {
         setTeamData(response.data.data);
       })
