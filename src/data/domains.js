@@ -20,7 +20,7 @@ export const domains = [
     id: 3,
     name: "Competitive Programming/DSA",
     count: 157,
-    description: "https://www.tangytip.com/wp-content/uploads/2020/07/competitive-programming.png",
+    description: "Daily , Weekly , Monthly Challenges on DSA and Contest with proper structured resources and many more...",
     link: "https://chat.whatsapp.com/GyeIABR5CzxG9XGBxBmSNK",
     photo : "https://www.tangytip.com/wp-content/uploads/2020/07/competitive-programming.png"
   },
