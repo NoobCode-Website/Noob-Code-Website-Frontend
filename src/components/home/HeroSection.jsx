@@ -11,7 +11,7 @@ const HeroSection = () => {
         border: "1px solid blue"
       }
   return (
-    <div className="hero flex flex-col-reverse flex-wrap  2xl:flex-row w-screen -mt-16  xl:justify-evenly 2xl:justify-center items-center gap-12 2xl:gap-5  xl:mt-[100px]  xl:h-[550px] ">
+    <div className="hero flex flex-col-reverse  flex-wrap  2xl:flex-row w-screen -mt-16  xl:justify-evenly 2xl:justify-center items-center gap-12 2xl:gap-5  xl:mt-[100px]  xl:h-[550px] ">
       <div className="flex  flex-col items-center gap-8 w-[300px] md:w-[500px] md:text-center  xl:w-[800px]">
         <TypeAnimation
           sequence={[
@@ -27,7 +27,7 @@ const HeroSection = () => {
           className="font-bold text-2xl xl:text-4xl text-[#0addf0]"
           repeat={Infinity}
         />
-        <p className="text-white md:text-center font-semibold text-xl w-[280px] xl:w-[500px]">
+        <p className="text-white text-center font-semibold text-xl w-[280px] xl:w-[500px]">
         Oragnising Contests , Workshops , Webinars , Bootcamps and Connecting with Big Tech Enthusiasts from Noob to Pro !
           <div className="flex  flex-col gap-5 xl:gap-8   xl:flex-row  justify-center  mt-10  items-center">
             <a href='https://chat.whatsapp.com/GYL89VSeSXgLppyy6U6NVZ' rel='noreferrer' target='_blank' className="xl:px-4 xl:py-4 p-2  rounded-full bg-[#1a8fdd] font-bold text-lg xl:text-xl text-white hover:bg-white hover:text-[#1a8fdd]">
@@ -50,9 +50,9 @@ const HeroSection = () => {
       </div>
 
       <div>
-        <div>
+        <div className='flex flex-row items-center justify-center'>
         <img src={logo} alt="noobcode logo" 
-       className='rounded-full  border-2 mt-[100px] xl:mt-0 border-blue-500 h-[10rem] w-[10rem] md:w-[12rem] md:h-[12rem] xl:h-[15rem] xl:w-[15rem] ' style={logoStyle}  />
+       className='rounded-full   border-2 mt-[100px] xl:mt-0 border-blue-500 h-[10rem] w-[10rem] md:w-[12rem] md:h-[12rem] xl:h-[15rem] xl:w-[15rem] ' style={logoStyle}  />
       </div>
       </div>
     </div>
