@@ -8,7 +8,7 @@ const VisionCard = ({title , description , image}) => {
         <img
           src={image}
           alt=""
-          className="h-[150px] w-[150px] rounded-full"
+          className="h-[150px] w-[150px] object-cover rounded-full"
         />
         <div className="flex flex-col items-center gap-2">
           <h1 className="text-2xl text-white tracking-wider font-semibold">
