@@ -1,12 +1,12 @@
 import React from 'react'
 
-const VisionCard = ({title , description}) => {
+const VisionCard = ({title , description , image}) => {
   return (
     <>
      <div className="vision-card flex flex-col justify-center shadow-md shadow-white hover:scale-105 duration-500 cursor-default items-center border-2 border-blue-500 xl:w-[380px] xl:h-[500px] min-[360px]:w-[300px] md:w-[600px]   rounded-xl p-6">
       <div className="flex flex-col items-center gap-6">
         <img
-          src="https://www.clipartmax.com/png/middle/351-3515666_c-language-global-or-external-variables-with-examples-c-programming-logo.png"
+          src={image}
           alt=""
           className="h-[150px] w-[150px] rounded-full"
         />

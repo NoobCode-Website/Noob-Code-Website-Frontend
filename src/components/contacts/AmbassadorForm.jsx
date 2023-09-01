@@ -1,7 +1,30 @@
 import axios from "axios";
 import React, { useState } from "react";
-
+import { useNavigate } from "react-router-dom";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const AmbassadorForm = () => {
+  const success = () => toast.success("Form Data Sent Successfully !" ,  {
+    position: "top-center",
+    autoClose: 5000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    theme: "colored",
+    });
+  const error = () => toast.error("Oops something went wrong" , {
+    position: "top-center",
+    autoClose: 5000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    theme: "colored",
+    });
+  const navigate = useNavigate();
   const [candidate, setCandidate] = useState({
     name: "",
     college: "",
@@ -20,6 +43,7 @@ const AmbassadorForm = () => {
     setCandidate({ ...candidate, [name] : value });
   };
 
+
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
@@ -28,11 +52,16 @@ const AmbassadorForm = () => {
         { ...candidate }
       );
       console.log("Form Data Submitted !");
-
+      success();
       console.log(candidate);
+      setTimeout(() => {
+        navigate(0);
+      } , 3000);
     } catch(err) {
       console.log(err);
+      error();
     }
+    
   };
 
   return (
@@ -201,6 +230,7 @@ const AmbassadorForm = () => {
           >
             Submit
           </button>
+          <ToastContainer />
         </div>
       </form>
     </div>

@@ -27,7 +27,7 @@ const TeamsPage = ({ isMenuOpen }) => {
       {isLoading ? (
         <div
           role="status"
-          className="mt-[150px] h-[600px] flex flex-col items-center justify-center"
+          className="mt-[150px] h-[1000px] flex flex-col items-center justify-center"
         >
           <svg
             aria-hidden="true"
