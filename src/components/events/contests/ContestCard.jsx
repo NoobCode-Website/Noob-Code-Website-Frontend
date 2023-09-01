@@ -1,6 +1,5 @@
-import React, { useState } from 'react'
+import React from 'react'
 
-import LeaderBoard from './LeaderBoard'
 const ContestCard = ({key , index , name , date , description , attendees , link , image , time , venue}) => {
     // const [openLeaderboard, setOpenLeaderboard] = useState(false)
   return (
