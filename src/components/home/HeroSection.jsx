@@ -28,8 +28,7 @@ const HeroSection = () => {
           repeat={Infinity}
         />
         <p className="text-white md:text-center font-semibold text-xl w-[280px] xl:w-[500px]">
-        NOOBCODE aims at providing hand-picked Free Resources to everyone in domains of Programming Languages, DSA and Web Development , hosting Competitions to Ignite the Spirit of Coding and Development and Building a Community of Like-minded individuals and thus grow together. I believe the more we share our knowledge and interact the more we become knowledgeable . 
-Exploring New Domains and Organizing Sessions on various technologies to help people interact with big tech  people .
+        Oragnising Contests , Workshops , Webinars , Bootcamps and Connecting with Big Tech Enthusiasts from Noob to Pro !
           <div className="flex  flex-col gap-5 xl:gap-8   xl:flex-row  justify-center  mt-10  items-center">
             <a href='https://chat.whatsapp.com/GYL89VSeSXgLppyy6U6NVZ' rel='noreferrer' target='_blank' className="xl:px-4 xl:py-4 p-2  rounded-full bg-[#1a8fdd] font-bold text-lg xl:text-xl text-white hover:bg-white hover:text-[#1a8fdd]">
               Join Us
@@ -53,7 +52,7 @@ Exploring New Domains and Organizing Sessions on various technologies to help pe
       <div>
         <div>
         <img src={logo} alt="noobcode logo" 
-       className='rounded-full  border-2 mt-[150px] xl:mt-0 border-blue-500 h-[10rem] w-[10rem] md:w-[12rem] md:h-[12rem] xl:h-[15rem] xl:w-[15rem] ' style={logoStyle}  />
+       className='rounded-full  border-2 mt-[100px] xl:mt-0 border-blue-500 h-[10rem] w-[10rem] md:w-[12rem] md:h-[12rem] xl:h-[15rem] xl:w-[15rem] ' style={logoStyle}  />
       </div>
       </div>
     </div>
