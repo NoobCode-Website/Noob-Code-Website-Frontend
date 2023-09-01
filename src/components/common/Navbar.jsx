@@ -18,7 +18,7 @@ const Navbar = () => {
     <div className='text-white flex flex-row items-center gap-20 font-semibold text-xl '>
     {
       routings.map((item, index) => (
-        <Link to={item.path} key={index} index={index}><h1 className='hover:text-blue-300 cursor-pointer'>{item.name}</h1></Link>
+        <Link to={item.path} key={index} index={index}><h1 className='hover:text-blue-400 cursor-pointer'>{item.name}</h1></Link>
       ))
     }
     </div>

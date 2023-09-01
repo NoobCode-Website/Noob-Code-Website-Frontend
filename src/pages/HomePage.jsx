@@ -1,4 +1,5 @@
 import React from 'react'
+import "../App.css";
 import Domains from '../components/home/Domains/Domains'
 import HeroSection from '../components/home/HeroSection'
 
@@ -13,7 +14,6 @@ const HomePage = ({isMenuOpen}) => {
       <AfterHero />
         <Domains />
        <Testimonials />
-        
     </div>
   )
 }

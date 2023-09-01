@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <>
-    <div id="works" className="mx-auto flex flex-col xl:flex-row justify-evenly bg-yellow-400 items-center  mt-16 sm:mt-10 p-4">
+    <div id="works" className="mx-auto flex flex-col xl:flex-row justify-evenly bg-black bg-opacity-70 items-center  mt-16 sm:mt-10 p-4">
 
 <div className="flex flex-col items-center gap-5">
   <img src={logo} className="w-[120px] h-[120px] rounded-full" alt="" />
@@ -27,7 +27,7 @@ const Footer = () => {
       <div className=" h-auto sm:h-[250px] flex flex-col justify-around gap-5 items-center  p-6 sm:p-4">
         <h2
           data-aos="zoom-out"
-          className="font-bold text-3xl sm:text-2xl md:text-4xl lg:text-5xl"
+          className="font-bold text-2xl text-[#0addf0] sm:text-2xl md:text-4xl lg:text-5xl"
         >
           Let's Connect 
         </h2>
@@ -76,7 +76,7 @@ const Footer = () => {
       </div>
 
       <div className="flex flex-col items-center gap-5">
-        <h1 className="text-3xl font-bold">Quick Links</h1>
+        <h1 className="text-2xl text-[#0addf0] font-bold">Quick Links</h1>
         <div>
           <ul className="grid grid-cols-2 text-center gap-5">
            {
