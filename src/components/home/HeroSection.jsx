@@ -11,8 +11,8 @@ const HeroSection = () => {
         border: "1px solid blue"
       }
   return (
-    <div className="hero flex flex-col-reverse flex-wrap  2xl:flex-row w-screen -mt-16  xl:justify-evenly 2xl:justify-center items-center gap-20 2xl:gap-5  xl:mt-[100px]  xl:h-[550px] ">
-      <div className="flex  flex-col items-center gap-8 w-[280px] md:w-[500px] md:text-center  xl:w-[800px]">
+    <div className="hero flex flex-col-reverse  flex-wrap  2xl:flex-row w-screen -mt-16  xl:justify-evenly 2xl:justify-center items-center gap-12 2xl:gap-5  xl:mt-[100px]  xl:h-[550px] ">
+      <div className="flex  flex-col items-center gap-8 w-[300px] md:w-[500px] md:text-center  xl:w-[800px]">
         <TypeAnimation
           sequence={[
          
@@ -27,30 +27,32 @@ const HeroSection = () => {
           className="font-bold text-2xl xl:text-4xl text-[#0addf0]"
           repeat={Infinity}
         />
-        <p className="text-white md:text-center font-semibold text-xl w-[280px] xl:w-[500px]">
-        NOOBCODE aims at providing hand-picked Free Resources to everyone in domains of Programming Languages, DSA and Web Development , hosting Competitions to Ignite the Spirit of Coding and Development and Building a Community of Like-minded individuals and thus grow together. I believe the more we share our knowledge and interact the more we become knowledgeable . 
-Exploring New Domains and Organizing Sessions on various technologies to help people interact with big tech  people .
-          <div className="flex flex-col gap-10  xl:flex-row  justify-center  mt-10  items-center">
-            <a href='https://chat.whatsapp.com/GYL89VSeSXgLppyy6U6NVZ' rel='noreferrer' target='_blank' className="px-4 py-4 rounded-full bg-[#1a8fdd] font-bold text-xl text-white hover:bg-white hover:text-[#1a8fdd]">
+        <p className="text-white text-center font-semibold text-xl w-[280px] xl:w-[500px]">
+        Oragnising Contests , Workshops , Webinars , Bootcamps and Connecting with Big Tech Enthusiasts from Noob to Pro !
+          <div className="flex  flex-col gap-5 xl:gap-8   xl:flex-row  justify-center  mt-10  items-center">
+            <a href='https://chat.whatsapp.com/GYL89VSeSXgLppyy6U6NVZ' rel='noreferrer' target='_blank' className="xl:px-4 xl:py-4 p-2  rounded-full bg-[#1a8fdd] font-bold text-lg xl:text-xl text-white hover:bg-white hover:text-[#1a8fdd]">
               Join Us
             </a>
+            <div className='flex flex-row items-center gap-5 xl:gap-8'>
             <a href='https://discord.gg/MGT7jvFk' rel='noreferrer' target='_blank' className="px-4 py-2 rounded-full bg-[#6a45e4] font-bold text-xl text-white hover:bg-white hover:text-[#6a45e4] ">
-              <BsDiscord className="h-[40px] w-[40px]" />
+              <BsDiscord className="h-[25px] w-[25px] 2xl:h-[40px] 2xl:w-[40px]" />
             </a>
             <a href='https://www.instagram.com/_noobcode_/' rel='noreferrer' target='_blank' className="px-4 py-2 rounded-full bg-white font-bold text-xl text-[#ab3ad7] hover:bg-[#ab3ad7] hover:text-white">
-              <BsInstagram className="h-[40px] w-[40px]" />
+              <BsInstagram className="h-[25px] w-[25px] 2xl:h-[40px] 2xl:w-[40px]" />
             </a>
             <a href='https://www.linkedin.com/company/90744227/' rel='noreferrer' target='_blank' className="px-4 py-2 rounded-full bg-[#215594] font-bold text-xl text-white hover:bg-white hover:text-[#215594]">
-              <BsLinkedin className="h-[40px] w-[40px]" />
+              <BsLinkedin className="h-[25px] w-[25px] 2xl:h-[40px] 2xl:w-[40px]" />
             </a>
+            </div>
+           
           </div>
         </p>
       </div>
 
       <div>
-        <div>
+        <div className='flex flex-row items-center justify-center'>
         <img src={logo} alt="noobcode logo" 
-       className='rounded-full hidden 2xl:block border-2 mt-[150px] xl:mt-0 border-blue-500 h-[10rem] w-[10rem] md:w-[12rem] md:h-[12rem] xl:h-[15rem] xl:w-[15rem] ' style={logoStyle}  />
+       className='rounded-full   border-2 mt-[100px] xl:mt-0 border-blue-500 h-[10rem] w-[10rem] md:w-[12rem] md:h-[12rem] xl:h-[15rem] xl:w-[15rem] ' style={logoStyle}  />
       </div>
       </div>
     </div>

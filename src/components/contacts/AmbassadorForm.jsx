@@ -1,8 +1,33 @@
 import axios from "axios";
 import React, { useState } from "react";
+
 import { BsFillCheckSquareFill } from "react-icons/bs";
+import { useNavigate } from "react-router-dom";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const AmbassadorForm = () => {
+  const success = () => toast.success("Form Data Sent Successfully !" ,  {
+    position: "top-center",
+    autoClose: 5000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    theme: "colored",
+    });
+  const error = () => toast.error("Oops something went wrong" , {
+    position: "top-center",
+    autoClose: 5000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    theme: "colored",
+    });
+  const navigate = useNavigate();
   const [candidate, setCandidate] = useState({
     name: "",
     college: "",
@@ -39,20 +64,25 @@ const AmbassadorForm = () => {
     }
   };
 
+
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
       await axios.post(
-        "https://noob-code-website-backend-xwzd.vercel.app/ambassadors/addambassadors",
+        "https://noobcode-server-side.vercel.app/ambassadors/addambassadors",
         { ...candidate }
       );
       console.log("Form Data Submitted !");
-      alert("Submitted successfully!")
-
+      success();
       console.log(candidate);
-    } catch (err) {
+      setTimeout(() => {
+        navigate(0);
+      } , 3000);
+    } catch(err) {
       console.log(err);
+      error();
     }
+    
   };
 
   return (
@@ -264,6 +294,7 @@ const AmbassadorForm = () => {
           >
             Submit
           </button>
+          <ToastContainer />
         </div>
       </form>
     </div>
