@@ -22,7 +22,7 @@ const visions = [
 const AfterHero = () => {
   return (
     <>
-   <div className="flex flex-col items-center gap-12 py-8">
+   <div className="flex flex-col items-center gap-12 py-2 xl:py-8">
     <div className="font-bold text-white text-3xl tracking-widest hover:scale-x-110 ">
      <h1>Our Vision</h1>
    </div>
