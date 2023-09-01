@@ -34,7 +34,7 @@ const HomePage = ({ isMenuOpen }) => {
           <Domains />
           <Testimonials />
         </div>
-      )}
+      
     </>
   );
 };
