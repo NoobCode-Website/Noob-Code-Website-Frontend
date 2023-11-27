@@ -1,0 +1,124 @@
+Git Branch : Patch_1 , Patch_2 , Patch_3
+Hosting : Vercel 
+Tech-Stack :
+1. ReactJS
+2. TailwindCSS
+3. Flowbite-React
+4. REST API
+5. Postman 
+6. nodeJS
+7. expressJS
+8. mongoDB 
+9. mongoose
+10. git 
+
+Navbar Routes : Sagnik
+Home (Done)
+Events (Done)
+Resources (Done)
+Team (Done)
+Contact (Done)
+
+
+Home :
+1. Hero Section : (NO BACKEND ) : Sagnik
+Left : Comm Desc      Right : Logo
+Bottom : Comm Social Media Buttons 
+
+2. After-Hero Section : (NO BACKEND) : Esha 
+ Our Mission & Vision : 4 Points ( with Icons )
+
+3. Domain Section : (NO BACKEND) : Soumyaraj
+  Our Community Domains ( Domain Cards with Member counts : onClick = Modal(Desc. Whatsapp join QR at right side , Bottom : Resources for this domain (Button) )
+
+4. Testimonial Section : (NO BACKEND) : Esha
+   TestiMonials with photo and reviews 
+
+5. Footer Section : (Lawda Backend) : Sagnik
+   Common Portion 
+
+
+Events Route :
+Our Events (GET Request from BACKEND ) :  Soumyaraj Bag
+Sub-Routes : Sessions , Contests , Collaborations
+Card of Event :
+1. Activity Name 
+2. Date 
+3. Venue 
+4. Body Count for Contest 
+5. Youtube Video Link
+6. Speaker Details :
+   i. Photo
+   ii. Speaker Name and Social Media Handles 
+   iii. Experiences (max 2 points )
+7. Album Details : Modal : Carousel of Photos including Promotional Photos
+
+Resources Route : Esha
+Our Resources : (NO BACKEND)
+Resource Cards : 
+1. Resource Topic Name 
+2. Description 
+3. Open Drive Link
+
+Team Route : Sagnik
+Our Team : (GET Request from BACKEND except Photos)
+Core Team : Leads and Vice-Leads 
+ 	    Tech Leads and Vice-Tech Leads 
+	    Banchod Dalle
+Graphics Team : Members
+Social Media Team : Members
+Co-ordinators : Members
+
+Member Card Details :
+1. Photo 
+2. Name 
+3. Role 
+4. Contact Media Handles
+
+Join Us as A Campus Ambassador ( Form Link ) (POST Request from BACKEND) : Soumyaraj 
+
+
+Contact Route : (NO BACKEND) : Soumyaraj
+Our Location using a Google Map Component 
+How to Reach Us : 
+Mail   |  Phone Number  |  LinkTree
+Discord  |  LinkedIn    |  Instagram 
+
+
+Admin Dashboard : (BACKEND) :
+1. Events : 
+   i. Add Event (POST Request)
+   ii. Edit Event (PUT Request)
+   iii. Delete Event (DELETE Request)
+   iv. View Events (GET Request)
+
+2. Resources :
+   i. Add Resource (POST Request)
+   ii. Edit Resource (PUT Request)
+   iii. Delete Resource (DELETE Request)
+   iv. View Resources (GET Request)
+
+3. Team :
+   i. Add Member (POST Request)
+   ii. Edit Member (PUT Request)
+   iii. Delete Member (DELETE Request)
+   iv. View Members (GET Request)
+
+4. Campus Ambassador :
+   i. View Campus Ambassadors (GET Request)
+
+
+Made with Love by Sagnik , Soumyaraj , Swapnendu , Esha .
+
+
+
+
+
+
+
+
+
+
+
+
+
