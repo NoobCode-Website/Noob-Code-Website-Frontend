@@ -4,8 +4,8 @@ import EventCard from "../EventCard";
 import { PropagateLoader } from "react-spinners";
 
 const Sessions = () => {
-  const [eventData, setEventData] = React.useState([]);
-  const [speakerData, setSpeakerData] = React.useState([]);
+  const [eventData, setEventData] = useState([]);
+  const [speakerData, setSpeakerData] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
     axios
@@ -38,26 +38,30 @@ const Sessions = () => {
           <h1>Our Events</h1>
         </div>
 
-        <div className="flex flex-col-reverse items-center gap-20">
+        <div className=" max-md:mx-3 flex flex-col-reverse  items-center gap-20">
           {isLoading ? (
-            <div className="h-[500px] flex justify-center items-center">
+            <div className="h-[500px]  flex justify-center items-center">
               <PropagateLoader color="#fff" />
             </div>
           ) : (
             eventData.map((event, index) => {
               return (
-                <EventCard
+                <div
                   key={index}
-                  index={index}
-                  speakers={speakerData}
-                  name={event.activity}
-                  ylink={event.youtube}
-                  image={event.image}
-                  date={event.date}
-                  venue={event.venue}
-                  attendees={event.footfall}
-                  isLoading={isLoading}
-                />
+                  className="md:max-w-[700px] lg:max-w-[950px] xl:max-w-[1200px]"
+                >
+                  <EventCard
+                    index={index}
+                    speakers={speakerData}
+                    name={event.activity}
+                    ylink={event.youtube}
+                    image={event.image}
+                    date={event.date}
+                    venue={event.venue}
+                    attendees={event.footfall}
+                    isLoading={isLoading}
+                  />
+                </div>
               );
             })
           )}

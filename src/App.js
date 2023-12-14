@@ -14,6 +14,7 @@ import { useState } from "react";
 import Foot from "./components/common/Foot";
 import Footer from "./components/common/Footer";
 import Events from "./components/admin/Events";
+import AdminPage from "./pages/AdminPage";
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -25,25 +26,52 @@ function App() {
   return (
     <>
       <BrowserRouter>
-      <ScrollToTop/>
-      <div><Header isMenuOpen={isMenuOpen} toggleMenu={toggleMenu}/></div>
+        <ScrollToTop />
+        <div>
+          <Header isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />
+        </div>
         <Routes>
-          
-          <Route exact path="/events/sessions" element={<EventsPage isMenuOpen={isMenuOpen} />} />
-          <Route exact path="/events/contests" element={<Contests isMenuOpen={isMenuOpen} />} />
-          <Route exact path="/events/collaborations" element={<Collaborations isMenuOpen={isMenuOpen} />} />
-          <Route exact path="/resources" element={<ResourcesPage isMenuOpen={isMenuOpen} />} />
-           
-          <Route path="/team" element={<TeamsPage isMenuOpen={isMenuOpen} />}/>
-          <Route path="/contacts" element={<ContactsPage isMenuOpen={isMenuOpen} />} />
-         
+          <Route
+            exact
+            path="/events/sessions"
+            element={<EventsPage isMenuOpen={isMenuOpen} />}
+          />
+          <Route
+            exact
+            path="/events/contests"
+            element={<Contests isMenuOpen={isMenuOpen} />}
+          />
+          <Route
+            exact
+            path="/events/collaborations"
+            element={<Collaborations isMenuOpen={isMenuOpen} />}
+          />
+          <Route
+            exact
+            path="/resources"
+            element={<ResourcesPage isMenuOpen={isMenuOpen} />}
+          />
+
+          <Route path="/team" element={<TeamsPage isMenuOpen={isMenuOpen} />} />
+          <Route
+            path="/contacts"
+            element={<ContactsPage isMenuOpen={isMenuOpen} />}
+          />
+
           <Route path="/" element={<HomePage isMenuOpen={isMenuOpen} />} />
-          <Route path="/joinus" element={<AmbassadorPage isMenuOpen={isMenuOpen} />} />
-          <Route path="/noobcodeadmin" element={<Events />} />
+          <Route
+            path="/joinus"
+            element={<AmbassadorPage isMenuOpen={isMenuOpen} />}
+          />
+          <Route
+            path="/noobcodeadmin"
+            element={<AdminPage isMenuOpen={isMenuOpen} />}
+          />
         </Routes>
+
         <Footer />
-      
-        <Foot/>
+
+        <Foot />
       </BrowserRouter>
     </>
   );
