@@ -46,9 +46,11 @@ const EventCard = ({
               </a>
             </div>
           )}
-          <div className="py-6">
-            <SpeakerBox speakers={speakers} index={index} />
-          </div>
+          {!speakers && (
+            <div className="py-6">
+              <SpeakerBox speakers={speakers} index={index} />
+            </div>
+          )}
         </div>
         <div className="lg:w-1/2">
           <img

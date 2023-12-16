@@ -1,7 +1,6 @@
 import React from "react";
-import Events from "../components/admin/Events";
-
-const AdminPage = ({ isMenuOpen }) => {
+import AddEvents from "../components/AddEvents";
+const EventPage = ({ isMenuOpen }) => {
   return (
     <>
       <div
@@ -9,10 +8,10 @@ const AdminPage = ({ isMenuOpen }) => {
           isMenuOpen ? "pt-96" : "2xl:pt-[150px]"
         } flex   overflow-x-clip flex-col  items-center justify-center xl:gap-0 gap-8`}
       >
-        <Events />
+        <AddEvents />
       </div>
     </>
   );
 };
 
-export default AdminPage;
+export default EventPage;

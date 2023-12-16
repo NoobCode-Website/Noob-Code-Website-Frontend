@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import axios from "axios";
 import EventCard from "../EventCard";
 import { PropagateLoader } from "react-spinners";
+import { AuthContext } from "../../../contexts/AuthContext";
 
 const Sessions = () => {
   const [eventData, setEventData] = useState([]);

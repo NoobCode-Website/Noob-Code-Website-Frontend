@@ -1,7 +1,8 @@
 // Header.js
-import React from "react";
+import React, { useContext } from "react";
 import { Bars3BottomRightIcon, XMarkIcon } from "@heroicons/react/24/solid";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../contexts/AuthContext";
 
 export const Links = [
   { name: "HOME", link: "/" },
@@ -11,10 +12,12 @@ export const Links = [
   { name: "CONTACT", link: "/contacts" },
 ];
 const Header = ({ isMenuOpen, toggleMenu }) => {
+  const auth = useContext(AuthContext);
+  const { logout, user } = auth;
   return (
     <div
       className={`shadow-md w-full 2xl:fixed top-0 left-0 z-20 transition-transform duration-300 ease-in-out ${
-        isMenuOpen ? "relative" : "" 
+        isMenuOpen ? "relative" : ""
       }`}
     >
       <div className="md:flex items-center justify-around bg-black bg-opacity-50 py-4 md:px-10 px-7">
@@ -46,8 +49,10 @@ const Header = ({ isMenuOpen, toggleMenu }) => {
           {Links.map((link) => (
             <Link to={link.link} key={link.name}>
               <li className="md:ml-8 md:my-0 my-4 pt-2 font-semibold xl:text-xl">
-                <h1 className="text-blue-200 p-2 cursor-pointer hover:bg-black hover:bg-opacity-10  hover:rounded transition border border-transparent 
-                hover:border-blue-300 ">
+                <h1
+                  className="text-blue-200 p-2 cursor-pointer hover:bg-black hover:bg-opacity-10  hover:rounded transition border border-transparent 
+                hover:border-blue-300 "
+                >
                   {link.name}
                 </h1>
               </li>

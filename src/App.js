@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import "./App.css";
 import EventsPage from "./pages/EventsPage";
 import ContactsPage from "./pages/ContactsPage";
@@ -10,11 +10,16 @@ import AmbassadorPage from "./pages/AmbassadorPage";
 import Header from "./components/common/Nav";
 import TeamsPage from "./pages/TeamPage";
 import ScrollToTop from "./components/common/ScrollToTop";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import Foot from "./components/common/Foot";
 import Footer from "./components/common/Footer";
-import Events from "./components/admin/Events";
-import AdminPage from "./pages/AdminPage";
+import Events from "./components/admin/components/AddEvents";
+import AdminPage from "./components/admin/pages/AdminPage";
+import { AuthContext } from "./contexts/AuthContext";
+import AuthPage from "./components/admin/pages/AuthPage";
+import OutPage from "./components/admin/pages/OutPage";
+import EventPage from "./components/admin/pages/EventPage";
+import TeamPage from "./components/admin/pages/TeamPage";
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -22,7 +27,8 @@ function App() {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-
+  const auth = useContext(AuthContext);
+  const { user } = auth;
   return (
     <>
       <BrowserRouter>
@@ -65,7 +71,51 @@ function App() {
           />
           <Route
             path="/noobcodeadmin"
-            element={<AdminPage isMenuOpen={isMenuOpen} />}
+            element={
+              user == null ? (
+                <Navigate to={"/auth"} />
+              ) : (
+                <AdminPage isMenuOpen={isMenuOpen} />
+              )
+            }
+          />
+          <Route
+            exact
+            path="/auth"
+            element={<AuthPage isMenuOpen={isMenuOpen} />}
+          />
+          <Route
+            exact
+            path="/noobcodeadmin/outsources"
+            element={
+              user == null ? (
+                <Navigate to={"/auth"} />
+              ) : (
+                <OutPage isMenuOpen={isMenuOpen} />
+              )
+            }
+          />
+          <Route
+            exact
+            path="/noobcodeadmin/events"
+            element={
+              user == null ? (
+                <Navigate to={"/auth"} />
+              ) : (
+                <EventPage isMenuOpen={isMenuOpen} />
+              )
+            }
+          />
+          <Route
+            exact
+            path="/noobcodeadmin/team"
+            element={
+              user == null ? (
+                <Navigate to={"/auth"} />
+              ) : (
+                <TeamPage isMenuOpen={isMenuOpen} />
+              )
+            }
           />
         </Routes>
 
