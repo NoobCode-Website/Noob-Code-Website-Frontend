@@ -20,6 +20,7 @@ import AuthPage from "./components/admin/pages/AuthPage";
 import OutPage from "./components/admin/pages/OutPage";
 import EventPage from "./components/admin/pages/EventPage";
 import TeamPage from "./components/admin/pages/TeamPage";
+import AddSpeaker from "./components/admin/components/speakers/AddSpeaker";
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -114,6 +115,16 @@ function App() {
                 <Navigate to={"/auth"} />
               ) : (
                 <TeamPage isMenuOpen={isMenuOpen} />
+              )
+            }
+          />
+          <Route
+            path="/noobcodeadmin/events/addspeaker"
+            element={
+              user == null ? (
+                <Navigate to={"/auth"} />
+              ) : (
+                <AddSpeaker isMenuOpen={isMenuOpen} />
               )
             }
           />

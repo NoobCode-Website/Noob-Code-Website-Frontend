@@ -1,4 +1,4 @@
-import axios from "axios";
+import logo from "../../../assets/logo.jpg";
 import React, { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../../../contexts/AuthContext";
@@ -14,7 +14,7 @@ const Auth = () => {
   const [isLogin, setIsLogin] = useState(true);
   const navigate = useNavigate();
   const auth = useContext(AuthContext);
-  const { login, logout, signup } = auth;
+  const { login, signup } = auth;
   const handleChange = (e) => {
     setInputs({
       ...inputs,
@@ -46,8 +46,12 @@ const Auth = () => {
       <form
         action=""
         onSubmit={isLogin ? handleLogin : handleSubmit}
-        className="flex flex-col items-center w-1/4 justify-center gap-5 px-10 py-10 border-2 border-blue-400 rounded-lg"
+        className="flex flex-col bg-gradient-to-tr from-teal-600 to-indigo-900 items-center w-1/4 justify-center gap-5 px-10 py-10 border-2 border-blue-400 rounded-lg"
       >
+        <div className="flex flex-row items-center gap-2">
+          <img src={logo} className="rounded-full w-24" alt="" />
+          <h1 className="text-xl font-semibold text-white">Admin</h1>
+        </div>
         {!isLogin && (
           <div className="flex flex-col items-start text-white gap-1 w-full">
             <label htmlFor="" className="text-xl font-semibold">

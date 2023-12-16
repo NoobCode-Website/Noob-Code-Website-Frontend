@@ -1,7 +1,3 @@
-import { useState } from "react";
-
-import EventGallery from "./EventGallery";
-import SpeakerModal from "./SpeakerModal";
 import SpeakerBox from "./SpeakerBox";
 
 const EventCard = ({
@@ -46,11 +42,10 @@ const EventCard = ({
               </a>
             </div>
           )}
-          {!speakers && (
-            <div className="py-6">
-              <SpeakerBox speakers={speakers} index={index} />
-            </div>
-          )}
+
+          <div className="py-6">
+            <SpeakerBox speakers={speakers} index={index} />
+          </div>
         </div>
         <div className="lg:w-1/2">
           <img
