@@ -20,7 +20,7 @@ const SpeakerModal = ({ speaker, index, closeSpeaker, handleSpeaker }) => {
     <Modal
       show={handleSpeaker}
       onClose={closeSpeaker}
-      className="text-white max-md:mx-3"
+      className="text-white max-md:mx-3 w-fit mx-auto h-fit"
     >
       <Modal.Header className=" bg-violet-500 px-5 py-3 ">
         <h1 className="text-white font-semibold text-2xl">Speaker</h1>

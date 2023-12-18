@@ -1,11 +1,9 @@
 import React, { useState } from "react";
-import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import SpeakerModal from "./SpeakerModal";
 
 const SpeakerBox = ({ speakers, index }) => {
   const speakerDetails = speakers[index];
-
   const { speaker } = speakerDetails;
   const [openSpeaker, setSpeaker] = useState(false);
   const handleOpenSpeaker = () => {
@@ -57,12 +55,14 @@ const SpeakerBox = ({ speakers, index }) => {
               Know More{" "}
             </button>
             {openSpeaker ? (
-              <SpeakerModal
-                speaker={speaker[0]}
-                index={index}
-                closeSpeaker={closeOpenedSpeaker}
-                handleSpeaker={handleOpenSpeaker}
-              />
+              <div className="inset-0 backdrop-filter  bg-black backdrop-blur-sm bg-opacity-50">
+                <SpeakerModal
+                  speaker={speaker[0]}
+                  index={index}
+                  closeSpeaker={closeOpenedSpeaker}
+                  handleSpeaker={handleOpenSpeaker}
+                />
+              </div>
             ) : null}
           </>
         ) : (

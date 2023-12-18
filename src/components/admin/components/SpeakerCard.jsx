@@ -15,7 +15,7 @@ const SpeakerCard = ({ speaker, index }) => {
   return (
     <div className="flex flex-col justify-center items-center gap-2 border px-4 py-2 rounded-xl">
       <img
-        src="https://i.postimg.cc/NjfrBZjg/Bag.jpg"
+        src={speaker.image}
         alt=""
         className="w-32 h-full rounded-xl object-cover"
       />
